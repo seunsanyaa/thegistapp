@@ -16,11 +16,13 @@ import "swiper/css/pagination"
 SwiperCore.use([Pagination]);
 
 
-import {gsap, Linear} from "gsap";
+// import {gsap, Linear} from "gsap";
+
+import gsap from 'gsap'
 import { ExpoScaleEase } from "gsap/dist/EasePack";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from 'gsap/dist/CustomEase'
-gsap.registerPlugin(ExpoScaleEase,CustomEase, Linear,ScrollTrigger);
+gsap.registerPlugin(ExpoScaleEase,CustomEase,ScrollTrigger);
 
 export default function Listen( ) {
 
@@ -30,9 +32,9 @@ export default function Listen( ) {
 
     useEffect(() => {
 
-                gsap.from([gistContainer.current], {
+                gsap.from([gistContainer.current], 3, {
                         x:"100%",
-                        duration:3,
+                        // duration:3,
                         scrollTrigger: [gistContainer.current]
 
 
