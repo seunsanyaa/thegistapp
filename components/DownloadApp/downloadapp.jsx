@@ -24,29 +24,29 @@ export default function DownloadApp( ) {
     let containerMobile = useRef()
     useEffect(() => {
 
-
-        gsap.from([phoneImage.current],
-            {scrollTrigger:{
-                    trigger:mainText.current,
-                    scrub:true,
-                    toggleActions: "restart pause resume none"
-                    // pin: true
-                },
-                y:550,
-                // autoAlpha:0,
-
-                duration:1,
-                ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-
-
-
-            },
-
-
-
-
-
-        )
+        //
+        // gsap.from([phoneImage.current],
+        //     {scrollTrigger:{
+        //             trigger:mainText.current,
+        //             scrub:true,
+        //             toggleActions: "restart pause resume none"
+        //             // pin: true
+        //         },
+        //         y:550,
+        //         // autoAlpha:0,
+        //
+        //         duration:1,
+        //         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+        //
+        //
+        //
+        //     },
+        //
+        //
+        //
+        //
+        //
+        // )
 
 
 
