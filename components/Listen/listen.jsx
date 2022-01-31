@@ -32,7 +32,7 @@ export default function Listen( ) {
 
     useEffect(() => {
 
-                gsap.from([gistContainer.current], 3, {
+                gsap.to([gistContainer.current], 3, {
                         x:"100%",
                         // duration:3,
                         scrollTrigger: [gistContainer.current]
