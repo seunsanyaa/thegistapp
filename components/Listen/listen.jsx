@@ -32,21 +32,17 @@ export default function Listen( ) {
 
     useEffect(() => {
 
-                gsap.from([gistContainer.current], 10, {
-                        x:"100%",
+        gsap.from([gistContainer.current], 6,{
+            x:"100%",
+            scrollTrigger: gistContainer.current
 
 
+                // scrollTrigger:{trigger:[gistContainer2.current], scrub:true, toggleActions: "restart pause resume none"},
 
-                        // duration:3,
-                        scrollTrigger: gistContainer.current
-
-
-                        // scrollTrigger:{trigger:[gistContainer2.current], scrub:true, toggleActions: "restart pause resume none"},
-
-                        // ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+                // ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
 
-                })
+        })
 
 
 
