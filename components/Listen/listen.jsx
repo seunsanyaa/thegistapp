@@ -24,14 +24,15 @@ gsap.registerPlugin(ExpoScaleEase,CustomEase, Linear,ScrollTrigger);
 
 export default function Listen( ) {
 
-    let gistContainer= useRef();
-    let mainContainer= useRef();
+    let gistContainer= useRef()
+    let gistContainer2= useRef()
+    let mainContainer= useRef()
 
     useEffect(() => {
 
 gsap.from([gistContainer.current],
     {scrollTrigger:{
-        trigger:gistContainer.current,
+        trigger:gistContainer2.current,
             scrub:true,
             toggleActions: "restart pause resume none"
             // pin: true
@@ -73,6 +74,8 @@ gsap.from([gistContainer.current],
 
 
     <div className={listenstyles.gistsContainer}  ref={gistContainer}>
+
+        <div ref={gistContainer2}></div>
 
         <div className={listenstyles.singleGist}>
 
