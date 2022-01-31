@@ -27,32 +27,32 @@ export default function Listen( ) {
     let gistContainer= useRef();
     let mainContainer= useRef();
 
-    useEffect(() => {
-
-gsap.from([gistContainer.current],
-    {scrollTrigger:{
-        trigger:gistContainer.current,
-            scrub:true,
-            toggleActions: "restart pause resume none"
-            // pin: true
-        },
-        x:"100%",
-        duration:3,
-        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-
-
-        },
-
-
-
-
-
-    )
-
-
-
-
-    });
+//     useEffect(() => {
+//
+// gsap.from([gistContainer.current],
+//     {scrollTrigger:{
+//         trigger:gistContainer.current,
+//             scrub:true,
+//             toggleActions: "restart pause resume none"
+//             // pin: true
+//         },
+//         x:"100%",
+//         duration:3,
+//         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+//
+//
+//         },
+//
+//
+//
+//
+//
+//     )
+//
+//
+//
+//
+//     });
 
     return (
 
