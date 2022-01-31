@@ -1,0 +1,282 @@
+@font-face {
+  src: url("https://res.cloudinary.com/seunsanyaa/raw/upload/v1642872864/Gilroy-SemiBold_myzg9u.ttf");
+  font-family: Gilroy;
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+
+  .container{
+
+
+    display: block !important;
+    padding: 75px 25px !important;
+    justify-content: space-between !important;
+
+  }
+  .mobile{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+
+  .left{
+    display: none !important;
+  }
+
+  .center{
+    display: none !important;
+  }
+
+  .right{
+    display: none !important;
+  }
+
+
+  .mobileButton{
+    background: unset;
+    border: unset;
+  }
+
+
+}
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+
+
+
+  .container{
+
+
+    display: block !important;
+    padding: 75px 25px !important;
+    justify-content: space-between !important;
+
+  }
+  .mobile{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+
+  .left{
+    display: none !important;
+  }
+
+  .center{
+    display: none !important;
+  }
+
+  .right{
+    display: none !important;
+  }
+
+
+  .mobileButton{
+    background: unset;
+    border: unset;
+  }
+
+
+
+
+
+
+}
+@media (min-width: 425px) and (max-width: 767px) {
+
+
+  .container{
+
+
+    display: block !important;
+    padding: 75px 25px !important;
+    justify-content: space-between !important;
+
+  }
+  .mobile{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+
+  .left{
+    display: none !important;
+  }
+
+  .center{
+    display: none !important;
+  }
+
+  .right{
+    display: none !important;
+  }
+
+
+  .mobileButton{
+    background: unset;
+    border: unset;
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .container{
+
+
+
+    padding: 3em 50px !important;
+
+  }
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1199px){
+
+
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+
+
+
+}
+@media (min-width: 1440px) {
+
+  .container{
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    z-index: 200;
+  }
+
+}
+
+//@media (min-width: 1600px) {
+//
+//
+//
+//  .container{
+//
+//
+//    padding: 4em 133px !important;
+//
+//  }
+//
+//  .menuButton{
+//    background: #000000;
+//    border-radius: 32px;
+//    border-color: black;
+//    display: flex;
+//      align-items: center;
+//      justify-content: center;
+//    height: 70px !important;
+//    width: 200px !important;
+//    color: white;
+//  }
+//
+//  .menuText{
+//    font-family: "Gilroy";
+//
+//    font-size: 30px !important;
+//    line-height: 22px;
+//    padding-left: 16px;
+//  }
+//
+//  .right{
+//    height: 70px !important;
+//    width: 200px !important;
+//    background: #000000;
+//    display: flex;
+//    align-items: center;
+//    border-radius: 32px;
+//    border-color: black;
+//    //align-items: center;
+//  }
+//
+//  .store{
+//    margin-left: 30px !important;
+//    width: 1.7em !important;
+//  }
+//  .storeLast{
+//    padding-left: 22px;
+//    padding-right: 22px;
+//
+//  }
+//
+//  .logo{
+//    width: 2em !important;
+//  }
+//
+//
+//}
+
+.container{
+
+
+  display: flex;
+  padding: 4em 133px;
+  justify-content: space-between;
+  //z-index: 100000;
+}
+
+.menuButton{
+
+  background: #000000;
+  border-radius: 32px;
+  border-color: black;
+  //display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  height: 48px;
+  width: 124px;
+  color: white;
+}
+
+.menuText{
+  font-family: "Gilroy";
+
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 16px;
+}
+
+.right{
+  background: #000000;
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  border-color: black;
+  //align-items: center;
+}
+
+.store{
+  padding-left: 22px;
+}
+.storeLast{
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.offcanvas{
+  //background: red;
+  //overflow-y: scroll;
+  //overflow: auto;
+  //  overflow: auto;
+
+}
+
+
+.mobile{
+  display: none;
+}

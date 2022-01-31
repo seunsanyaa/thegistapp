@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  /*overflow-x: h*/
+;
+}
+.mainbg
+{
+  position: relative;
+}
+.hero{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+background: url("https://res.cloudinary.com/seunsanyaa/image/upload/v1643184760/BG_axelrb.png");
+/*height: 100vh;*/
+background-size: cover;
+  background-repeat:repeat-x;
+  margin-bottom: 24px;
+
+  /*background-repeat: round;*/
+}
+
+.background{
+  background: #050505;
+  overflow-x: hidden;
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: red !important;
+  color: red !important;
+  opacity: 1!important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  color:white;
+  background-color: white;
+  opacity: 0.4;
+  margin: 0em 10px !important ;
+}
+
+.swiper-pagination{
+  /*padding-top: 10em !important;*/
+}
+/*.swiper-pagination-bullet-inactive{*/
+/*  background-color: #8F8F8F !important;*/
+/*}*/
+
+
+/*laptopScroll{*/
+
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  overflow-y: scroll;*/
+/*}*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+img{
+  max-width: 100%;
+}
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+/*html.has-scroll-smooth {*/
+/*  overflow: hidden; }*/
+/*.has-scroll-smooth body {*/
+/*  overflow: hidden; }*/
+
+

@@ -1,0 +1,514 @@
+@font-face {
+  src: url("https://res.cloudinary.com/seunsanyaa/raw/upload/v1642872862/Gilroy-Regular_izit95.ttf");
+  font-family: Gilroy Regular;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+  .gistsContainerMobile{
+    display: flex !important;
+  }
+
+  .container{
+    padding-left: 26px !important;
+    padding-top: 120px !important;
+  }
+  .head{
+    font-family: Gilroy;
+
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin: unset;
+    margin-bottom: unset;
+  }
+
+  .headParagraph{
+    padding-right: 70px !important;
+    color: #D7D7D7;
+    font-family: Gilroy Regular;
+    font-weight: 400;
+    opacity: 0.64;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    margin-top: unset;
+    padding-top: 12px !important;
+  }
+
+  .gistsContainer{
+    display: none !important;
+    overflow-x: hidden;
+    margin-top: 80px !important;
+  }
+  .gistsContainerMobile{
+    padding-right: 14px !important;
+    margin-top: 80px !important;
+  }
+
+  .singleGist{
+    width: 100% !important;
+    height: 660px !important;
+  }
+
+  .image{
+    width: 100% !important;
+  }
+
+  .singleGistafter{
+    width: 335px;
+
+    margin-left:64px ;
+  }
+
+
+  .profileName{
+    font-size: 14px !important;
+  }
+
+  .playSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    background: #141414;
+    padding: 22px 16px;
+    margin-top: -0.2em;
+  }
+  .loader{
+    width: 100% !important;
+    position: relative;
+    /* line grey */
+    height: 4px;
+    background: #211F1F;
+    border-radius: 4px;
+    margin-left: 16px !important;
+  }
+
+  .redLine{
+    position: absolute;
+    left: 1%;
+  }
+
+  .gistLogo{
+    display: none;
+    margin-left: 16px ;
+
+  }
+  .gistLogoMobile{
+    display: block !important;
+    margin-left: 25px !important;
+  }
+
+
+
+}
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+  .gistsContainerMobile{
+    display: flex !important;
+  }
+
+
+  .container{
+    padding-left: 26px !important;
+    padding-top: 120px !important;
+  }
+  .head{
+    font-family: Gilroy;
+
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin: unset;
+    margin-bottom: unset;
+  }
+
+  .headParagraph{
+    padding-right: 70px !important;
+    color: #D7D7D7;
+    font-family: Gilroy Regular;
+    font-weight: 400;
+    opacity: 0.64;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    margin-top: unset;
+    padding-top: 12px !important;
+  }
+
+  .gistsContainer{
+    display: none !important;
+    overflow-x: hidden;
+    margin-top: 80px !important;
+  }
+  .gistsContainerMobile{
+    padding-right: 14px !important;
+    margin-top: 80px !important;
+  }
+
+  .singleGist{
+    width: 100% !important;
+    height: 660px !important;
+  }
+
+  .image{
+    width: 100% !important;
+  }
+
+  .singleGistafter{
+    width: 335px;
+
+    margin-left:64px ;
+  }
+
+
+  .profileName{
+    font-size: 14px !important;
+  }
+
+  .playSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    background: #141414;
+    padding: 22px 16px;
+    margin-top: -0.2em;
+  }
+  .loader{
+    width: 100% !important;
+    position: relative;
+    /* line grey */
+    height: 4px;
+    background: #211F1F;
+    border-radius: 4px;
+    margin-left: 16px !important;
+  }
+
+  .redLine{
+    position: absolute;
+    left: 1%;
+  }
+
+  .gistLogo{
+    display: none;
+    margin-left: 16px ;
+
+  }
+  .gistLogoMobile{
+    display: block !important;
+    margin-left: 25px !important;
+  }
+
+
+}
+
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+
+  .gistsContainerMobile{
+    display: flex !important;
+  }
+  .container{
+    padding-left: 26px !important;
+    padding-top: 120px !important;
+  }
+  .head{
+    font-family: Gilroy;
+
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin: unset;
+    margin-bottom: unset;
+  }
+
+  .headParagraph{
+    padding-right: 70px !important;
+    color: #D7D7D7;
+    font-family: Gilroy Regular;
+    font-weight: 400;
+    opacity: 0.64;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    margin-top: unset;
+    padding-top: 12px !important;
+  }
+
+  .gistsContainer{
+    display: none !important;
+    overflow-x: hidden;
+    margin-top: 80px !important;
+  }
+  .gistsContainerMobile{
+    padding-right: 14px !important;
+    margin-top: 80px !important;
+  }
+
+  .singleGist{
+    width: 100% !important;
+    height: 660px !important;
+  }
+
+  .image{
+    width: 100% !important;
+  }
+
+  .singleGistafter{
+    width: 335px;
+
+    margin-left:64px ;
+  }
+
+
+  .profileName{
+    font-size: 14px !important;
+  }
+
+  .playSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    background: #141414;
+    padding: 22px 16px;
+    margin-top: -0.2em;
+  }
+  .loader{
+    width: 100% !important;
+    position: relative;
+    /* line grey */
+    height: 4px;
+    background: #211F1F;
+    border-radius: 4px;
+    margin-left: 16px !important;
+  }
+
+  .redLine{
+    position: absolute;
+    left: 1%;
+  }
+
+  .gistLogo{
+display: none;
+    margin-left: 16px ;
+
+  }
+  .gistLogoMobile{
+    display: block !important;
+    margin-left: 25px !important;
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  .container{
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+  }
+
+}
+//@media (min-width: 1600px) {
+//
+//  .container{
+//    padding-left: 200px !important;
+//    padding-top: 200px !important;
+//  }
+//  .head{
+//    font-family: Gilroy;
+//
+//    font-size: 70px !important;
+//    line-height: 50px;
+//    margin: unset;
+//    margin-bottom: unset;
+//  }
+//
+//  .headParagraph{
+//    color: #D7D7D7;
+//    font-family: Gilroy Regular;
+//    font-weight: 400;
+//    opacity: 0.64;
+//    font-size: 40px !important;
+//    line-height: 24px;
+//    margin-top: unset;
+//    padding-top: 35px !important;
+//  }
+//
+//  .gistsContainer{
+//    display: flex;
+//    overflow-x: hidden;
+//    margin-top: 100px !important;
+//  }
+//
+//
+//  .singleGist{
+//    width: 335px;
+//  }
+//
+//  .singleGistafter{
+//    width: 335px;
+//
+//    margin-left:64px ;
+//  }
+//
+//
+//
+//
+//}
+
+
+
+.container{
+  padding-left: 131px;
+  padding-top: 120px;
+  overflow-x: hidden;
+}
+.header{
+  color: white;
+
+}
+
+.head{
+  font-family: Gilroy;
+
+  font-size: 40px;
+  line-height: 50px;
+  margin: unset;
+  margin-bottom: unset;
+}
+
+.headParagraph{
+  color: #D7D7D7;
+font-family: Gilroy Regular;
+  font-weight: 400;
+  opacity: 0.64;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: unset;
+  padding-top: 8px;
+}
+.gistsContainer{
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  margin-top: 56px;
+}
+
+
+//.gistsContainer :not(:first-child){
+//  margin-left: 64px;
+//}
+.singleGist{
+  width: 335px;
+}
+
+.singleGistafter{
+  width: 335px;
+
+  margin-left:64px ;
+}
+.profileName{
+padding-left: 16px;
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  /* White */
+
+  color: #FFFFFF;
+}
+
+
+.hour{
+//  font-size: 14px;
+//  line-height: 17px;
+//  /* identical to box height */
+//font-family: "Gilroy Regular";
+
+  /* Text grey */
+padding-left: 0.7em;
+  //color: #8F8F8F;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.topLeft{
+  display: flex;
+  align-items: center;
+}
+
+.topRight{
+
+}
+
+.playSection{
+  display: flex;
+  align-items: center;
+  background: #141414;
+  padding: 22px 16px;
+ margin-top: -0.2em;
+}
+.loader{
+  width: 224px;
+  position: relative;
+  /* line grey */
+height: 4px;
+  background: #211F1F;
+  border-radius: 4px;
+  margin-left: 16px;
+}
+
+.redLine{
+  position: absolute;
+  left: 1%;
+}
+
+.gistLogo{
+
+  margin-left: 16px ;
+
+}
+
+.gistLogoMobile{
+  display: none;
+}
+.bottomSection{
+  padding-top: 0.8em;
+}
+.bottomLeft{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #8F8F8F
+}
+.viewsAndLikes{
+  display: flex;
+  align-items: center;
+}
+.views{
+  display: flex;
+  align-items: center;
+}
+
+.likes{
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+}
+
+.numbers{
+  font-family: "Gilroy Regular";
+  padding-left: 8.5px;
+  font-size: 14px;
+  line-height: 156%;
+}
+
+
+.gistsContainerMobile{
+  display: none;
+}

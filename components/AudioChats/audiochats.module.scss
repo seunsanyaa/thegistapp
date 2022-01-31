@@ -1,0 +1,688 @@
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+
+
+  .container{
+    display: block !important;
+    align-items: center;
+
+    background: #ED1C24;
+
+    //padding: 7em 10em;
+
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+    padding-top: 120px !important;
+
+    padding-bottom:119px;
+
+
+
+
+
+
+
+  }
+  .textSide{
+    //padding-right: 10em;
+    margin: unset !important;
+
+    padding: unset !important;
+    text-align: center !important;
+  }
+
+  .text{
+    font-size: 28px !important;
+    line-height: 108% !important;
+    margin: unset;
+    font-family: Gilroy !important;
+    color: #FFFFFF;
+
+  }
+  .appstoreSection{
+    margin-top: 48px;
+    display: none !important;
+  }
+  .emoji{
+    width: 1.1em !important;
+    vertical-align: top!important;
+  }
+
+  .store {
+    margin-left: 14px;
+  }
+
+
+  .bigImage{
+    width: 100% !important;
+    margin-top: 80px !important;
+  }
+
+  .appstoreSectionMobile{
+    display: flex !important;
+margin-left: -3.1em !important;
+    margin-top: 80px !important;
+  }
+  .storeMobile{
+    padding-left: 4px !important;
+  }
+
+
+  .bigImageContainer{
+
+    width: 100% !important;
+    margin-top: 80px !important;
+    height: 20em !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative;
+    margin-right: 0px !important;
+    align-items: center !important;
+
+  }
+
+  .bigImage{
+    position: absolute;
+    width: 170px !important;
+    text-align: center !important;
+    //height: 200em !important;
+    margin: 0 auto !important;
+    top: 0;
+    left: auto !important;
+    right: auto !important;
+
+
+  }
+
+  .blackplayer{
+    position: absolute;
+    z-index: 100;
+    top: 115px !important;
+    left:0 !important;
+    width: 105px !important;
+
+
+
+    //right: 150px;
+  }
+
+  .redplayer{
+    position: absolute;
+    z-index: 100;
+    top: 145px !important;
+    left: 110px !important;
+    //right: 0px;
+    width: 120px !important;
+
+  }
+
+}
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+
+
+
+  .container{
+    display: block !important;
+    align-items: center;
+
+    background: #ED1C24;
+
+    //padding: 7em 10em;
+
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+
+    padding-top: 120px !important;
+
+    padding-bottom:119px;
+
+
+
+
+
+
+
+  }
+  .textSide{
+    //padding-right: 10em;
+    margin: unset !important;
+
+    padding: unset !important;
+    text-align: center !important;
+  }
+
+  .text{
+    font-size: 28px !important;
+    line-height: 108% !important;
+    margin: unset;
+    font-family: Gilroy !important;
+    color: #FFFFFF;
+
+  }
+  .appstoreSection{
+    margin-top: 48px;
+    display: none !important;
+  }
+  .emoji{
+    width: 1.1em !important;
+    vertical-align: top!important;
+  }
+
+  .store {
+    margin-left: 14px;
+  }
+
+
+  .bigImage{
+    width: 100%!important;
+    margin-top: 80px !important;
+  }
+
+  .appstoreSectionMobile{
+    display: flex !important;
+
+    margin-top: 80px !important;
+  }
+  .storeMobile{
+    padding-left: 10px !important;
+  }
+
+
+
+  .bigImageContainer{
+
+    width: 100% !important;
+    margin-top: 80px !important;
+    height: 26em !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative;
+    margin-right: 0px !important;
+    align-items: center !important;
+
+  }
+
+  .bigImage{
+    position: absolute;
+    width: 220px !important;
+    text-align: center !important;
+    //height: 200em !important;
+    margin: 0 auto !important;
+    top: 0;
+    left: auto !important;
+    right: auto !important;
+
+
+  }
+
+  .blackplayer{
+    position: absolute;
+    z-index: 100;
+    top: 145px !important;
+    left:0 !important;
+    width: 150px !important;
+
+
+
+    //right: 150px;
+  }
+
+  .redplayer{
+    position: absolute;
+    z-index: 100;
+    top: 187px !important;
+    left: 161px !important;
+    //right: 0px;
+    width: 170px !important;
+
+  }
+
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+
+
+
+  .container{
+    display: block !important;
+    align-items: center;
+
+    background: #ED1C24;
+
+    //padding: 7em 10em;
+
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+
+    padding-top: 120px !important;
+
+    padding-bottom:119px;
+
+
+
+
+
+
+
+  }
+  .textSide{
+    //padding-right: 10em;
+    margin: unset !important;
+
+    padding: unset !important;
+    text-align: center !important;
+  }
+
+  .text{
+    font-size: 28px !important;
+    line-height: 108% !important;
+    margin: unset;
+    font-family: Gilroy !important;
+    color: #FFFFFF;
+
+  }
+  .appstoreSection{
+    margin-top: 48px;
+    display: none !important;
+  }
+  .emoji{
+width: 1.1em !important;
+    vertical-align: top!important;
+  }
+
+  .store {
+    margin-left: 14px;
+  }
+
+
+
+
+  .appstoreSectionMobile{
+    display: flex !important;
+
+    margin-top: 80px !important;
+  }
+  .storeMobile{
+    padding-left: 11px !important;
+  }
+
+
+  .bigImageContainer{
+
+    width: 100% !important;
+    margin-top: 80px !important;
+    height: 26em !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative;
+    margin-right: 0px !important;
+    align-items: center !important;
+
+  }
+
+  .bigImage{
+    position: absolute;
+    width: 220px !important;
+    text-align: center !important;
+    //height: 200em !important;
+    margin: 0 auto !important;
+    top: 0;
+    left: auto !important;
+    right: auto !important;
+
+
+  }
+
+  .blackplayer{
+    position: absolute;
+    z-index: 100;
+    top: 145px !important;
+    left:0 !important;
+    width: 150px !important;
+
+
+
+    //right: 150px;
+  }
+
+  .redplayer{
+    position: absolute;
+    z-index: 100;
+    top: 187px !important;
+    left: 161px !important;
+    //right: 0px;
+    width: 170px !important;
+
+  }
+
+
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  .container{
+
+    //padding: 7em 10em;
+
+    padding: 2em 3em !important;
+    padding-left: 1em !important;
+
+    padding-right: 5em;
+
+
+
+
+
+
+
+  }
+
+
+  .textSide{
+    padding-right: 0em !important;
+  }
+
+  .text{
+    font-size: 35px !important;
+    padding-right: 3em !important;
+
+  }
+
+  .appstoreSection{
+
+    display: inline-block;
+  }
+  .store1{
+    width: 10em !important;
+    height: 3em !important;
+  }
+.store{
+  width: 10em !important;
+  height: 3em !important;
+}
+  //.bigImage{
+  //  width: 20em;
+  //}
+
+
+
+    .bigImageContainer{
+
+      width: 20em !important;
+
+      height: 35em !important;
+      position: relative;
+      margin-right: 0px !important;
+
+    }
+
+    .bigImage{
+      position: absolute;
+width: 370px !important;
+      //height: 200em !important;
+      top: 0;
+      left: 0 !important;
+      right: 84px;
+
+
+    }
+
+    .blackplayer{
+      position: absolute;
+      z-index: 100;
+      top: 185px !important;
+      left: -65px !important;
+      width: 180px !important;
+
+
+
+      //right: 150px;
+    }
+
+    .redplayer{
+      position: absolute;
+      z-index: 100;
+      top: 239px !important;
+      left: 143px !important;
+      //right: 0px;
+      width: 180px !important;
+
+    }
+
+
+
+  }
+  @media (min-width: 1024px) and (max-width: 1199px){
+
+  .container{
+
+    //padding: 7em 10em;
+
+   padding: 2em 3.5em !important;
+
+
+
+
+
+
+
+  }
+
+
+  .textSide{
+    padding-right: 0em !important;
+  }
+
+  .text{
+    font-size: 45px !important;
+  }
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+  .container{
+
+    //padding: 7em 10em;
+
+    padding: 2em 3.5em !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+}
+
+
+@media (min-width: 1440px) {
+
+  .container{
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+  }
+
+}
+
+
+.containerOutside{
+  background: #ED1C24;
+}
+//@media (min-width: 1600px) {
+//
+//
+//
+//
+//  .container{
+//    display: flex;
+//    align-items: center;
+//
+//    background: #ED1C24;
+//
+//    //padding: 7em 10em;
+//
+//    padding-left: 300px !important;
+//    padding-right: 250px !important;
+//
+//    padding-top: 176px;
+//
+//    padding-bottom:119px;
+//
+//
+//
+//
+//
+//
+//
+//  }
+//  .textSide{
+//    padding-right: 22em !important;
+//  }
+//
+//  .text{
+//    font-size: 110px !important;
+//    line-height: 108%;
+//    margin: unset;
+//    font-family: Gilroy;
+//    color: #FFFFFF;
+//  }
+//  .appstoreSection{
+//    margin-top: 48px;
+//    display: flex;
+//  }
+//  .emoji{
+//
+//    width: 1em !important;
+//
+//  }
+//
+//  .store{
+//    margin-left: 14px;
+//  }
+//
+//
+//
+//  .store1{
+//    width: 16em !important;
+//    height: 5em !important;
+//  }
+//  .store{
+//    width: 16em !important;
+//    height: 5em !important;
+//  }
+//  .bigImage{
+//    width: 100% !important;
+//    height: 100%;
+//    position: relative;
+//    background-repeat: no-repeat;
+//    top: 0%;
+//    background-size: cover;
+//    background: url("https://res.cloudinary.com/seunsanyaa/image/upload/v1643214955/Rectangle_6_nnt8f9.png");
+//  }
+//
+//
+//}
+
+
+.bigImageContainer{
+
+  width: 536px ;
+
+ height:  709.74px;
+  position: relative;
+  margin-right: 350px;
+
+}
+
+.bigImage{
+  position: absolute;
+
+  top: 0;
+  left: 82px;
+  right: 84px;
+
+
+}
+
+.blackplayer{
+  position: absolute;
+  z-index: 100;
+  top: 244px;
+  left: 0;
+
+  //right: 150px;
+}
+
+.redplayer{
+  position: absolute;
+  z-index: 100;
+  top: 311px;
+ left: 265px;
+//right: 0px;
+
+}
+
+.container{
+  display: flex;
+  align-items: center;
+
+  background: #ED1C24;
+
+  //padding: 7em 10em;
+
+  padding-left: 131px;
+  padding-right: 194px;
+
+  padding-top: 176px;
+
+  padding-bottom:119px;
+
+
+
+
+
+
+
+}
+.textSide{
+padding-right: 10em;
+}
+
+.text{
+  font-size: 56px;
+  line-height: 108%;
+margin: unset;
+font-family: Gilroy;
+  color: #FFFFFF;
+}
+.appstoreSection{
+  margin-top: 48px;
+  display: flex;
+}
+.emoji{
+
+}
+
+.store{
+  margin-left: 14px;
+}
+
+.appstoreSectionMobile{
+  display: none;
+}

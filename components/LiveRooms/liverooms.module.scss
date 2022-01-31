@@ -1,0 +1,480 @@
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+
+  .container{
+
+    //padding: 0em 23px !important;
+    margin-top: 120px !important;
+    display: block !important;
+    padding-left: 9px !important;
+    padding-right: 23px !important;
+
+  }
+
+
+  .textSection{
+    padding-top: 120px !important;
+    padding-left: 24px !important;
+    padding-right: 0em !important;
+  }
+  .head{
+
+
+    font-size: 24px !important;
+
+  }
+
+  .paragraph{
+    font-family: Gilroy Regular;
+    padding-top: 16px !important;
+
+    padding-right: 5px !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    /* or 25px */
+    margin: unset;
+
+    color: #D7D7D7;
+
+    opacity: 0.64;
+  }
+
+  .images{
+    width: 100% !important
+  }
+
+  .imageContainer{
+    position: relative;
+    width: 100% !important;
+    height: 180px !important;
+    margin-left: 0em !important;
+  }
+
+  .firstImage{
+    position: absolute;
+    top : 40px !important;
+    width: 9em!important;
+  }
+  .secondImage{
+    position: absolute;
+    z-index: 100;
+    left: 25px !important;
+    top : 25px !important;
+    width: 11.5em!important;
+
+  }
+
+  .thirdImage{
+    position: absolute;
+    z-index: 110;
+    left:60px !important;
+    top: 10px !important;
+    width: 15em!important;
+
+  }
+}
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+
+  .container{
+
+    //padding: 0em 23px !important;
+    margin-top: 120px !important;
+    display: block !important;
+    padding-left: 9px !important;
+    padding-right: 23px !important;
+
+  }
+
+
+  .textSection{
+    padding-top: 120px !important;
+    padding-left: 24px !important;
+    padding-right: 0em !important;
+  }
+  .head{
+
+
+    font-size: 24px !important;
+
+  }
+
+  .paragraph{
+    font-family: Gilroy Regular;
+    padding-top: 16px !important;
+
+    padding-right: 10px !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    /* or 25px */
+    margin: unset;
+
+    color: #D7D7D7;
+
+    opacity: 0.64;
+  }
+
+  .images{
+    width: 100% !important
+  }
+  .imageContainer{
+    position: relative;
+    width: 100% !important;
+    height: 180px !important;
+    margin-left: 0em !important;
+  }
+
+  .firstImage{
+    position: absolute;
+    top : 40px !important;
+    width: 12em!important;
+  }
+  .secondImage{
+    position: absolute;
+    z-index: 100;
+    left: 25px !important;
+    top : 25px !important;
+    width: 14.5em!important;
+
+  }
+
+  .thirdImage{
+    position: absolute;
+    z-index: 110;
+    left:60px !important;
+    top: 10px !important;
+    width: 18em!important;
+
+  }
+
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+  .container{
+
+    //padding: 0em 23px !important;
+    margin-top: 120px !important;
+    display: block !important;
+padding-left: 9px !important;
+    padding-right: 23px !important;
+
+  }
+
+
+  .textSection{
+    padding-top: 120px !important;
+    padding-left: 24px !important;
+    padding-right: 0em !important;
+  }
+  .head{
+
+
+    font-size: 24px !important;
+
+  }
+
+  .paragraph{
+    font-family: Gilroy Regular;
+    padding-top: 16px !important;
+
+    padding-right: 40px !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    /* or 25px */
+    margin: unset;
+
+    color: #D7D7D7;
+
+    opacity: 0.64;
+  }
+
+  .images{
+    width: 100% !important
+  }
+
+  .imageContainer{
+    position: relative;
+    width: 100% !important;
+    height: 180px !important;
+    margin-left: 1em !important;
+  }
+
+  .firstImage{
+    position: absolute;
+    top : 40px !important;
+    width: 13em!important;
+  }
+  .secondImage{
+    position: absolute;
+    z-index: 100;
+    left: 25px !important;
+    top : 25px !important;
+    width: 15.5em!important;
+
+  }
+
+  .thirdImage{
+    position: absolute;
+    z-index: 110;
+    left:60px !important;
+    top: 10px !important;
+    width: 19em!important;
+
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .container{
+
+    padding: 0em 30px !important;
+    margin-top: 150px !important;
+
+    //padding-right: 0em !important;
+
+  }
+
+
+  .textSection{
+    padding-left: 60px !important;
+    padding-right: 0em !important;
+    margin-top: -3em !important;
+  }
+  .head{
+
+
+    font-size: 28px !important;
+
+  }
+
+  .paragraph{
+    font-family: Gilroy Regular;
+    padding-top: 24px;
+    font-size: 13px !important;
+    line-height: 124%;
+    /* or 25px */
+    margin: unset;
+
+    color: #D7D7D7;
+
+    opacity: 0.64;
+  }
+
+  .images{
+    width: 20em;
+  }
+
+
+  .imageContainer{
+    position: relative;
+    width: 75em !important;
+    height: 260px;
+    margin-right: 2em !important;
+  }
+
+  .firstImage{
+    position: absolute;
+    top : 40px !important;
+    width: 13em!important;
+  }
+  .secondImage{
+    position: absolute;
+    z-index: 100;
+    left: 25px !important;
+    top : 25px !important;
+    width: 15.5em!important;
+
+  }
+
+  .thirdImage{
+    position: absolute;
+    z-index: 110;
+    left:60px !important;
+    top: 10px !important;
+    width: 19em!important;
+
+  }
+
+
+}
+@media (min-width: 1024px) and (max-width: 1199px){
+
+  .container{
+
+    padding: 2em 70px !important;
+
+
+  }
+
+
+  .textSection{
+    padding-left: 100px !important;
+    padding-right: 1em !important;
+  }
+  .head{
+
+
+    font-size: 40px;
+
+  }
+
+  .paragraph{
+    font-family: Gilroy Regular;
+    padding-top: 24px;
+    font-size: 18px !important;
+    line-height: 124%;
+    /* or 25px */
+    margin: unset;
+
+    color: #D7D7D7;
+
+    opacity: 0.64;
+  }
+
+  .images{
+    width: 28em;
+  }
+
+
+  .imageContainer{
+    position: relative;
+    width: 100px !important;
+    height: 260px;
+    margin-right: 26em;
+  }
+
+  .firstImage{
+    position: absolute;
+    top : 40px !important;
+    width: 18em!important;
+  }
+  .secondImage{
+    position: absolute;
+    z-index: 100;
+    left: 35px;
+    top : 21px;
+    width: 21em!important;
+
+  }
+
+  .thirdImage{
+    position: absolute;
+    z-index: 110;
+    left: 87px;
+    //top: 10px !important;
+    width: 24.5em!important;
+
+  }
+
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1399px){
+  .container{
+
+    //padding: 7em 10em;
+
+    padding: 2em 3.5em !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+}
+
+
+
+@media (min-width: 1440px) {
+
+  .container{
+    max-width: 1440px !important;
+    //margin: 6em auto !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6em ;
+    margin-top: 190px !important;
+  }
+
+}
+
+.container{
+  display: flex;
+align-items: center;
+  padding: 2em 160px;
+  margin-top: 190px;
+  z-index: 9000;
+
+}
+
+.imageContainer{
+  position: relative;
+  width: 550px ;
+  height: 260px;
+  margin-right: 26em;
+  visibility: visible;
+}
+.firstImage{
+  position: absolute;
+  top : 40px;
+  visibility: visible;
+}
+.secondImage{
+  position: absolute;
+  z-index: 100;
+  left: 35px;
+  top : 21px;
+  visibility: visible;
+}
+
+.thirdImage{
+  position: absolute;
+  z-index: 110;
+  left: 87px;
+  visibility: visible;
+}
+.textSection{
+  padding-left: 120px;
+  padding-right: 3em;
+  visibility: visible;
+}
+.head{
+  font-family: Gilroy;
+
+  font-size: 40px;
+  line-height: 50px;
+  visibility: visible;
+
+margin: unset;
+  color: #FFFFFF;
+}
+
+.paragraph{
+  font-family: Gilroy Regular;
+padding-top: 24px;
+  font-size: 20px;
+  line-height: 124%;
+  /* or 25px */
+margin: unset;
+
+  color: #D7D7D7;
+
+  opacity: 0.64;
+  visibility: visible;
+}
+
