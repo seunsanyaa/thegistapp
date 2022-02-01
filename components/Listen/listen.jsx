@@ -31,19 +31,18 @@ export default function Listen( ) {
     let mainContainer= useRef()
 
     useEffect(() => {
-
-        gsap.fromTo([gistContainer.current], {
+        const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
+            .fromTo([gistContainer.current], {
             x:"100%",
+
 
         },{
             duration:3,
 
             x:"0",
 
-            // scrollTrigger: gistContainer.current
 
 
-            scrollTrigger:{trigger:[gistContainer2.current], scrub:true, toggleActions: "restart pause resume none"},
 
             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
@@ -53,7 +52,12 @@ export default function Listen( ) {
 
 
 
-
+        const ST = ScrollTrigger.create({
+            trigger:[gistContainer2.current],
+            scrub:true,
+            toggleActions: "restart pause resume none",
+            onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+        });
 
 
     }, []);

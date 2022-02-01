@@ -24,18 +24,13 @@ export default function DownloadApp( ) {
     let containerMobile = useRef()
     useEffect(() => {
 
-        //
-        gsap.fromTo([phoneImage.current],{
+        const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
+            .fromTo([phoneImage.current],{
             y:550
 
 
             }, {
-            scrollTrigger:{
-                    trigger:mainText.current,
-                    scrub:true,
-                    toggleActions: "restart pause resume none"
-                    // pin: true
-                },
+
 
             y:0,
 
@@ -46,17 +41,18 @@ export default function DownloadApp( ) {
 
 
 
-            },
+            })
 
 
 
 
 
-        )
-
-
-
-
+        const ST = ScrollTrigger.create({
+            trigger:mainText.current,
+            scrub:true,
+            toggleActions: "play pause resume none",
+            onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+        });
 
 
 
