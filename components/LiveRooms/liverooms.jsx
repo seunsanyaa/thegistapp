@@ -55,7 +55,7 @@ export default function LiveRooms( ) {
             y:170,
             opacity:0,
             scrollTrigger: secondContainer.current,
-            delay:0.3,
+            delay:0.35,
             duration:0.3
 
         })
@@ -84,13 +84,13 @@ export default function LiveRooms( ) {
 
 
 
-    });
+    },[]);
 
 
     return (
 
 
-        <div className="hidden">
+
 
   <div className={liveroomstyles.container} ref={container}>
 
@@ -118,6 +118,6 @@ export default function LiveRooms( ) {
 
   </div>
 
-        </div>
+
     )
 }

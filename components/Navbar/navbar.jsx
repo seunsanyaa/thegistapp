@@ -11,7 +11,7 @@ import {useEffect, useRef, useState} from "react";
 import navstylemobile from "./navbarmobile.module.scss";
 import LaptopMenu from "./LaptopMenu";
 import laptopmenustyles from "./laptopmenu.module.scss";
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 
 
 export default function NavBar( ) {
@@ -23,18 +23,6 @@ export default function NavBar( ) {
         gsap.registerPlugin(CSSRulePlugin);
         // do whatever you want to do with the plugin, its Working now...
         // for example
-        let cont = CSSRulePlugin.getRule(".hidden");
-
-
-        // uses el.current.querySelectorAll() internally
-
-        gsap.to(cont,1,{
-
-            visibility:"visible",
-            duration:3
-
-
-        });
 
 
 
@@ -44,6 +32,11 @@ export default function NavBar( ) {
 
     // const [showModal, setShowModal] = useState(false);
     return (
+
+
+
+
+
 
         <div className={navstyles.container}>
 
@@ -201,5 +194,6 @@ export default function NavBar( ) {
 
 
         </div>
+
     )
 }
