@@ -25,14 +25,20 @@ export default function DownloadApp( ) {
     useEffect(() => {
 
         //
-        gsap.from([phoneImage.current], {
+        gsap.fromTo([phoneImage.current],{
+            y:550
+
+
+            }, {
             scrollTrigger:{
                     trigger:mainText.current,
                     scrub:true,
                     toggleActions: "restart pause resume none"
                     // pin: true
                 },
-                y:550,
+
+            y:0,
+
                 // autoAlpha:0,
 
                 duration:1,

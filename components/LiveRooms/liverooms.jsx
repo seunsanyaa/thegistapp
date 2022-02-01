@@ -32,18 +32,34 @@ export default function LiveRooms( ) {
     useEffect(() => {
 
 
-        gsap.from([firstImage.current], {
-            y:170,
-            opacity:0,
+        gsap.fromTo([firstImage.current],
+            {
+                y:170,
+                autoAlpha:0
+
+            },
+            {
+                y:0,
+                autoAlpha:1,
+                // opacity:0,
+
+
             scrollTrigger: container.current,
             duration:0.3
             //         css:{
             //         visibility: "visible"
             // }
         });
-        gsap.from([secondImage.current], {
-            y:170,
-            opacity:0,
+        gsap.fromTo([secondImage.current], {
+                y:170,
+            autoAlpha:0
+            },
+            {
+                y:0,
+                autoAlpha:1,
+
+
+
             scrollTrigger: middleContainer.current,
             delay:0.2,
             duration:0.3
@@ -51,17 +67,29 @@ export default function LiveRooms( ) {
             //         visibility: "visible"
             // }
         });
-        gsap.from([thirdImage.current], {
+        gsap.fromTo([thirdImage.current], {
             y:170,
-            opacity:0,
+            autoAlpha:0
+
+
+
+        },{
+            y:0,
+            autoAlpha:1,
+
             scrollTrigger: secondContainer.current,
             delay:0.35,
             duration:0.3
 
         })
-        gsap.from([head.current], {
+        gsap.fromTo([head.current],{
+
+            autoAlpha:0
+
+        }, {
             // y:170,
-            opacity:0,
+            autoAlpha:1,
+
             scrollTrigger:textSection.current,
             delay:0.4,
             duration:0.4
@@ -69,9 +97,13 @@ export default function LiveRooms( ) {
             //         visibility: "visible"
             // }
         })
-        gsap.from([paragraph.current], {
+        gsap.fromTo([paragraph.current],{
+            autoAlpha:0
+
+        }, {
             // y:170,
-            opacity:0,
+            autoAlpha:1,
+
             scrollTrigger: textSection.current,
             delay:0.55,
             duration:0.4
