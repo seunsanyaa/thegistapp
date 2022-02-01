@@ -18,7 +18,7 @@ SwiperCore.use([Pagination]);
 
 // import {gsap, Linear} from "gsap";
 
-import gsap from 'gsap'
+import {gsap} from "gsap";
 import { ExpoScaleEase } from "gsap/dist/EasePack";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from 'gsap/dist/CustomEase'
@@ -32,8 +32,14 @@ export default function Listen( ) {
 
     useEffect(() => {
 
-        gsap.from(gistContainer.current, 3,{
+        gsap.fromTo([gistContainer.current], {
             x:"100%",
+
+        },{
+            duration:3,
+
+            x:"0",
+
             // scrollTrigger: gistContainer.current
 
 
