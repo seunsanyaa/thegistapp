@@ -369,69 +369,98 @@ width: 1.1em !important;
 
 
   @media (min-width: 768px) and (max-width: 1023px) {
-  .container{
-
-    //padding: 7em 10em;
-
-    padding: 2em 3em !important;
-    padding-left: 1em !important;
-
-    padding-right: 5em;
 
 
+    .container{
+      display: block !important;
+      align-items: center;
+
+      background: #ED1C24;
+
+      //padding: 7em 10em;
+
+      padding-left: 50px!important;
+      padding-right: 50px!important;
+
+      padding-top: 100px !important;
+
+      padding-bottom:100px !important;
 
 
 
 
 
-  }
 
 
-  .textSide{
-    padding-right: 0em !important;
-  }
+    }
+    .textSide{
+      //padding-right: 10em;
+      margin: unset !important;
 
-  .text{
-    font-size: 35px !important;
-    padding-right: 3em !important;
+      padding: unset !important;
+      text-align: center !important;
+    }
 
-  }
+    .text{
 
-  .appstoreSection{
+      padding: 0em 5em;
+      font-size: 30px !important;
+      line-height: 108% !important;
+      margin: unset;
+      font-family: Gilroy !important;
+      color: #FFFFFF;
 
-    display: inline-block;
-  }
-  .store1{
-    width: 10em !important;
-    height: 3em !important;
-  }
-.store{
-  width: 10em !important;
-  height: 3em !important;
-}
-  //.bigImage{
-  //  width: 20em;
-  //}
+    }
+    .appstoreSection{
+      margin-top: 48px;
+      display: none !important;
+    }
+    .emoji{
+      width: 1.1em !important;
+      vertical-align: top!important;
+    }
 
+    .store {
+      margin-left: 14px;
+    }
+
+
+
+
+    .appstoreSectionMobile{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 100px !important;
+    }
+    .storeMobile{
+      padding-left: 11px !important;
+    }
 
 
     .bigImageContainer{
 
-      width: 20em !important;
-
-      height: 35em !important;
+      width: 100% !important;
+      margin-top: 50px !important;
+      height: 26em !important;
+      display: flex !important;
+      justify-content: center !important;
       position: relative;
       margin-right: 0px !important;
+      align-items: center !important;
 
     }
 
     .bigImage{
       position: absolute;
-width: 370px !important;
+      width: 250px !important;
+      text-align: center !important;
       //height: 200em !important;
+      margin: 0 auto !important;
       top: 0;
-      left: 0 !important;
-      right: 84px;
+      left: auto !important;
+      right: auto !important;
 
 
     }
@@ -439,9 +468,9 @@ width: 370px !important;
     .blackplayer{
       position: absolute;
       z-index: 100;
-      top: 185px !important;
-      left: -65px !important;
-      width: 180px !important;
+      top: 170px !important;
+      left:150px !important;
+      width: 160px !important;
 
 
 
@@ -451,8 +480,8 @@ width: 370px !important;
     .redplayer{
       position: absolute;
       z-index: 100;
-      top: 239px !important;
-      left: 143px !important;
+      top: 213px !important;
+      left: 342px !important;
       //right: 0px;
       width: 180px !important;
 

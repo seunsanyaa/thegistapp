@@ -1,8 +1,7 @@
 
 
 
-@media (min-width: 320px) and (max-width: 374px) {
-
+@media (min-width:320px) and (max-width: 375px) {
   .container{
     padding: 0em 0em !important;
     //text-align: center !important;
@@ -19,12 +18,146 @@
 
   .circleMobile{
     width: 100% !important;
-    display: block !important;
+    display: unset !important;
 
-    padding-top: 100px !important;
+    //padding-top: 100px !important;
     padding-bottom: 120px !important;
+    position: relative !important;
+  }
+
+  .line1Mobile{
+    position: relative;
+    top: 0;
+    //left: 0;
+    width: 100%;
+  }
+  .line2Mobile{
+    position: absolute !important;
+    top: 44px !important;
+    left: 0px !important;
+    width: 100%;
+
+    //display: none;
+  }
+  .line3Mobile{
+    position: absolute !important;
+    top: 86px !important;
+    left: 6.83px !important;
+    width: 96% !important;
+
 
   }
+
+  .afroguyImageMobile{
+    position: absolute;
+    //display: none;
+
+    top: 120px !important;
+    width: 30px !important;
+    left:35px !important;
+  }
+
+  .sweaterMobile{
+    position: absolute;
+    top: 100px !important;
+    width: 30px !important;
+    left:241px !important;
+  }
+
+
+  .coverFaceMobile{
+    position: absolute;
+    top: 250px !important;
+    width: 22px !important;
+    left:auto !important;
+    right: 0px !important;
+  }
+
+
+  .southAfricaMobile{
+    position: absolute;
+    top: 350px !important;
+    width: 30px !important;
+    left:auto !important;
+    right: 70px !important;
+
+
+  }
+
+
+  .afroladyImageMobile{
+
+    position: absolute;
+    top: 250px !important;
+    width: 23px !important;
+    left:0 !important;
+  }
+
+
+  .line4Mobile{
+    position: absolute;
+    top: 123px !important;
+    //width: 365px !important;
+    left:42px !important;
+
+    width: 75% !important;
+
+  }
+
+  .blueImageMobile{
+    position: absolute;
+    top: 340px !important;
+    width: 30px !important;
+    left:128px !important;
+
+  }
+
+  .newfriendsbgMobile{
+    position: absolute;
+    top : 155px !important;
+    left:72px !important;
+    background: #0C0C0C;
+    width: 180px !important;
+    height: 180px !important;
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+
+    border-radius: 250px;
+  }
+
+
+  .header{
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 116%;
+    color: #FFFFFF;
+    //display: none;
+
+    margin: unset;
+
+    text-align: center;
+  }
+  .paragraph{
+    font-family: "Gilroy Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+
+    line-height: 124%;
+    text-align: center;
+    padding-top: 4.5px;
+    margin: unset;
+
+    color: #FFFFFF;
+  }
+
 
 
 
@@ -32,9 +165,7 @@
 
 
 
-@media (min-width: 375px) and (max-width: 424px) {
-
-
+@media (min-width:375px) and (max-width: 424px) {
   .container{
     padding: 0em 0em !important;
     //text-align: center !important;
@@ -51,12 +182,147 @@
 
   .circleMobile{
     width: 100% !important;
-    display: block !important;
+    display: unset !important;
 
-    padding-top: 100px !important;
+    //padding-top: 100px !important;
     padding-bottom: 120px !important;
+    position: relative !important;
+  }
+
+  .line1Mobile{
+    position: relative;
+    top: 0;
+    //left: 0;
+    width: 100%;
+  }
+  .line2Mobile{
+    position: absolute !important;
+    top: 44px !important;
+    left: 0px !important;
+    width: 100%;
+
+    //display: none;
+  }
+  .line3Mobile{
+    position: absolute !important;
+    top: 86px !important;
+    left: 6.83px !important;
+    width: 96% !important;
+
 
   }
+
+  .afroguyImageMobile{
+    position: absolute;
+    //display: none;
+
+    top: 140px !important;
+    width: 37px !important;
+    left:35px !important;
+  }
+
+  .sweaterMobile{
+    position: absolute;
+    top: 77px !important;
+    width: 37px !important;
+    left:241px !important;
+  }
+
+
+  .coverFaceMobile{
+    position: absolute;
+    top: 280px !important;
+    width: 27px !important;
+    left:auto !important;
+    right: 0px !important;
+  }
+
+
+  .southAfricaMobile{
+    position: absolute;
+    top: 400px !important;
+    width: 37px !important;
+    left:auto !important;
+    right: 70px !important;
+
+
+  }
+
+
+  .afroladyImageMobile{
+
+    position: absolute;
+    top: 280px !important;
+    width: 27px !important;
+    left:0 !important;
+  }
+
+
+  .line4Mobile{
+    position: absolute;
+    top: 123px !important;
+    //width: 365px !important;
+    left:44px !important;
+
+    width: 77% !important;
+
+  }
+
+  .blueImageMobile{
+    position: absolute;
+    top: 380px !important;
+    width: 37px !important;
+    left:128px !important;
+
+  }
+
+  .newfriendsbgMobile{
+    position: absolute;
+    top : 165px !important;
+    left:87px !important;
+    background: #0C0C0C;
+    width: 210px !important;
+    height: 210px !important;
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+
+    border-radius: 250px;
+  }
+
+
+  .header{
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px !important;
+    line-height: 116%;
+    color: #FFFFFF;
+    //display: none;
+
+    margin: unset;
+
+text-align: center;
+  }
+  .paragraph{
+    font-family: "Gilroy Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+
+    line-height: 124%;
+    text-align: center;
+    padding-top: 4.5px;
+    margin: unset;
+
+    color: #FFFFFF;
+  }
+
+
 
 
 }
@@ -83,18 +349,326 @@
 
   .circleMobile{
     width: 100% !important;
-    display: block !important;
+    display: unset !important;
 
-    padding-top: 100px !important;
+    //padding-top: 100px !important;
     padding-bottom: 120px !important;
+    position: relative !important;
   }
+
+  .line1Mobile{
+    position: relative;
+    top: 0;
+    //left: 0;
+    width: 100%;
+  }
+  .line2Mobile{
+    position: absolute !important;
+    top: 44px !important;
+    left: 0px !important;
+    width: 100%;
+
+//display: none;
+  }
+  .line3Mobile{
+    position: absolute !important;
+    top: 86px !important;
+    left: 6.83px !important;
+    width: 97% !important;
+
+
+  }
+
+  .afroguyImageMobile{
+    position: absolute;
+    //display: none;
+
+    top: 140px !important;
+    width: 37px !important;
+    left:35px !important;
+  }
+
+  .sweaterMobile{
+    position: absolute;
+    top: 77px !important;
+    width: 37px !important;
+    left:241px !important;
+  }
+
+
+  .coverFaceMobile{
+    position: absolute;
+    top: 280px !important;
+    width: 27px !important;
+    left:auto !important;
+    right: 0px !important;
+  }
+
+
+  .southAfricaMobile{
+    position: absolute;
+    top: 425px !important;
+    width: 37px !important;
+    left:auto !important;
+    right: 50px !important;
+
+
+  }
+
+
+  .afroladyImageMobile{
+
+    position: absolute;
+    top: 300px !important;
+    width: 27px !important;
+    left:0 !important;
+  }
+
+
+  .line4Mobile{
+    position: absolute;
+    top: 123px !important;
+    //width: 365px !important;
+    left:44px !important;
+
+    width: 80% !important;
+
+  }
+
+  .blueImageMobile{
+    position: absolute;
+    top: 430px !important;
+    width: 37px !important;
+    left:128px !important;
+
+  }
+
+  .newfriendsbgMobile{
+    position: absolute;
+    top : 165px !important;
+    left:91px !important;
+    background: #0C0C0C;
+    width: 250px !important;
+    height: 250px !important;
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+
+    border-radius: 250px;
+  }
+
+
+  .header{
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px !important;
+    line-height: 116%;
+    color: #FFFFFF;
+    //display: none;
+    text-align: center;
+
+    margin: unset;
+
+
+  }
+  .paragraph{
+    font-family: "Gilroy Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px !important;
+    line-height: 124%;
+    text-align: center;
+    padding-top: 4.5px;
+    margin: unset;
+
+    color: #FFFFFF;
+  }
+
+
+
+
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container{
-    padding: 2em 0em !important;
+    padding: 2em 1em !important;
     text-align: center;
 
+
   }
+
+
+
+
+
+  .circle{
+    position: relative;
+
+
+
+  }
+
+
+
+  .line1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    //position: absolute;
+  }
+
+  .line2{
+    position: absolute;
+    top: 85px !important;
+    //display: none;
+    width: 600px !important;
+    left: 90px !important;
+  }
+
+  .line3{
+    position: absolute;
+    top: 142px !important;
+    width: 480px !important;
+    //display: none;
+
+    left:150.14px !important;
+  }
+
+  .afroguyImage{
+    position: absolute;
+    //display: none;
+
+    top: 250px !important;
+    width: 50px !important;
+    left:160px !important;
+  }
+  .afroladyImage{
+
+
+    position: absolute;
+    top: 510px !important;
+    width: 50px !important;
+    left:170px !important;
+  }
+
+  .southAfrica{
+    position: absolute;
+    top: 510px !important;
+    width: 50px !important;
+    left:560px !important;
+
+
+  }
+
+  .coverFace{
+    position: absolute;
+    top: 300px !important;
+    width: 50px !important;
+    left:600px !important;
+
+  }
+
+  .sweater{
+    position: absolute;
+    top: 130px !important;
+    width: 50px !important;
+    left:450px !important;
+
+  }
+
+  .line4{
+    position: absolute;
+    top: 202px !important;
+    width: 365px !important;
+    left:212px !important;
+
+  }
+
+  .blueImage{
+    position: absolute;
+    top: 540px !important;
+    width: 50px !important;
+    left:380px !important;
+
+  }
+
+
+  .newfriendsbg{
+    position: absolute;
+    top : 252px !important;
+    left:262px !important;
+    background: #0C0C0C;
+    width: 270px !important;
+    height: 270px !important;
+    //display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+
+    border-radius: 250px;
+    //display: none !important;
+
+
+  }
+
+  .header{
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px !important;
+    line-height: 50px;
+    color: #FFFFFF;
+    //display: none;
+
+    margin: unset;
+    text-align: center;
+
+
+  }
+  .paragraph{
+    font-family: "Gilroy Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px !important;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 4.5px;
+    margin: unset;
+
+    color: #FFFFFF;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -420,6 +994,7 @@ display: flex;
   font-size: 40px;
   line-height: 50px;
   color: #FFFFFF;
+  text-align: center;
 
   margin: unset;
 
