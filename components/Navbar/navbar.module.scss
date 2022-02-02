@@ -286,7 +286,10 @@
   //position: fixed;
   //right: 0;
   //left: 0;
-  //z-index: 10000000;
+  position: sticky;
+  z-index: 10000000;
+  //
+  //margin-bottom: 128px;
   //top: 0;
   //height: 80px;
   //background: red;

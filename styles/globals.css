@@ -21,13 +21,17 @@ a {
 .mainbg
 {
   position: relative;
+
+  /*padding-top: 100px;*/
 }
+
+
 .hero{
 
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: -3;
+  z-index: -0;
 background: url("https://res.cloudinary.com/seunsanyaa/image/upload/v1643184760/BG_axelrb.png");
 /*height: 100vh;*/
 background-size: cover;
