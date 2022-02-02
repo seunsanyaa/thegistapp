@@ -224,6 +224,7 @@ export default function NewFriends( ) {
 
 
 
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1"),
 
 
                     duration:0.8,
@@ -235,6 +236,7 @@ export default function NewFriends( ) {
                 {opacity:1,
                     duration:0.5,
                     autoAlpha:1,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
                     // scrollTrigger:afroguy.current,
                 }, "-=0.5"
@@ -245,18 +247,24 @@ export default function NewFriends( ) {
 
                     delay:0.5,
                     duration:0.5,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
                     // scrollTrigger:coverface.current,
                 })
             .fromTo([afroladyMobile.current],
                 { opacity:0},
                 {opacity:1,
                     duration:0.5,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
                     // scrollTrigger:afrolady.current,
                 },"-=0.5")
             .fromTo([headerMobile.current],
                 { opacity:0},
                 {opacity:1,
                     duration:0.5,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
                     // scrollTrigger:header.current,
                 },"-=0.5")
             .fromTo([southafricaMobile.current],
@@ -264,12 +272,16 @@ export default function NewFriends( ) {
                 {opacity:1,
                     delay:0.5,
                     duration:0.5,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
                     // scrollTrigger:southafrica.current,
                 })
             .fromTo([blueImageMobile.current],
                 { opacity:0},
                 {opacity:1,
                     duration:0.5,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
                     // scrollTrigger:blueImage.current,
                 }, "-=0.5");
 
