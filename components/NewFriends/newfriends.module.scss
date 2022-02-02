@@ -100,14 +100,173 @@
 
 @media (min-width: 1024px) and (max-width: 1199px){
   .container{
-    padding: 2em 0em !important;
+    padding: 2em 5em !important;
     text-align: center;
+
+
+
 
   }
 
   .circle{
-    width: 50em !important;
+    position: relative;
+
+
+
   }
+
+
+
+  .line1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    //position: absolute;
+  }
+
+  .line2{
+    position: absolute;
+    top: 85px !important;
+    //display: none;
+    width: 710px !important;
+    left: 90px !important;
+  }
+
+  .line3{
+    position: absolute;
+    top: 142px !important;
+    width: 600px !important;
+    //display: none;
+
+    left:150.14px !important;
+  }
+
+  .afroguyImage{
+    position: absolute;
+    //display: none;
+
+    top: 250px !important;
+    width: 50px !important;
+    left:170px !important;
+  }
+  .afroladyImage{
+
+
+    position: absolute;
+    top: 550px !important;
+    width: 50px !important;
+    left:150px !important;
+  }
+
+  .southAfrica{
+    position: absolute;
+    top: 550px !important;
+    width: 50px !important;
+    left:700px !important;
+
+
+  }
+
+  .coverFace{
+    position: absolute;
+    top: 300px !important;
+    width: 50px !important;
+    left:700px !important;
+
+  }
+
+  .sweater{
+    position: absolute;
+    top: 130px !important;
+    width: 50px !important;
+    left:500px !important;
+
+  }
+
+  .line4{
+    position: absolute;
+    top: 215px !important;
+    width: 450px !important;
+    left:225px !important;
+
+  }
+
+  .blueImage{
+    position: absolute;
+    top: 635px !important;
+    width: 50px !important;
+    left:420px !important;
+
+  }
+
+
+  .newfriendsbg{
+    position: absolute;
+    top : 265px !important;
+    left:275px !important;
+    background: #0C0C0C;
+    width: 350px !important;
+    height: 350px !important;
+    //display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+
+    border-radius: 250px;
+    //display: none !important;
+
+
+  }
+
+  .header{
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px !important;
+    line-height: 50px;
+    color: #FFFFFF;
+    //display: none;
+
+    margin: unset;
+
+
+  }
+  .paragraph{
+    font-family: "Gilroy Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px !important;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 4.5px;
+    margin: unset;
+
+    color: #FFFFFF;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -120,6 +279,8 @@
 
     padding: 6em 0em !important;
     text-align: center;
+
+
 
 
 
@@ -146,7 +307,135 @@
 
 
 .container{
-  padding: 140px 130px;
+  //padding: 140px 130px;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+.circle{
+  position: relative;
+  //text-align: center;
+  //width: 1179px;
+  //height: 1179px;
+}
+.line1{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  //position: absolute;
+}
+
+.line2{
+  position: absolute;
+  top: 93px;
+  //width: 990.2px;
+  left: 93px;
+}
+
+.line3{
+  position: absolute;
+  top: 177px;
+  //width: 821.82px;
+  left:177.14px;
+}
+
+.afroguyImage{
+  position: absolute;
+  top: 273px;
+  //width: 80px;
+  left:239px;
+}
+.afroladyImage{
+  position: absolute;
+  top: 604px;
+  //width: 80px;
+  left:137px;
+}
+
+.southAfrica{
+  position: absolute;
+  top: 762px;
+  //width: 80px;
+  left:898px;
+}
+
+.coverFace{
+  position: absolute;
+  top: 448px;
+  //width: 80px;
+  left:959px;
+}
+
+.sweater{
+  position: absolute;
+  top: 177px;
+  //width: 80px;
+  left:711px;
+}
+
+.line4{
+  position: absolute;
+  top: 281.5px;
+  //width: 618.54px;
+  left:279px;
+}
+
+.blueImage{
+  position: absolute;
+  top: 842px;
+  //width: 80px;
+  left:452px;
+}
+
+
+.newfriendsbg{
+  position: absolute;
+  top : 371px;
+  left:368px;
+  background: #0C0C0C;
+  width: 440px;
+  height: 441px;
+display: flex;
+
+
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+
+  border-radius: 250px;
+
+}
+
+.header{
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFFFFF;
+
+  margin: unset;
+
+
+}
+.paragraph{
+  font-family: "Gilroy Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+padding-top: 4.5px;
+margin: unset;
+
+  color: #FFFFFF;
 }
 
 .circleMobile{

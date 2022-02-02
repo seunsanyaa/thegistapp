@@ -13,8 +13,14 @@ import LaptopMenu from "./LaptopMenu";
 import laptopmenustyles from "./laptopmenu.module.scss";
 import { gsap } from "gsap";
 
-
+import { ExpoScaleEase } from "gsap/dist/EasePack";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import CustomEase from 'gsap/dist/CustomEase'
+gsap.registerPlugin(ExpoScaleEase,CustomEase,ScrollTrigger);
 export default function NavBar( ) {
+
+    let nav = useRef()
+    let left = useRef()
 
     useEffect(() => {
 
@@ -23,8 +29,18 @@ export default function NavBar( ) {
         gsap.registerPlugin(CSSRulePlugin);
         // do whatever you want to do with the plugin, its Working now...
         // for example
-
-
+        //
+        // gsap.to([nav.current],{
+        //
+        //     scrollTrigger:{
+        //         trigger: nav.current,
+        //         pin: true,
+        //         scrub: true
+        //     }
+        //
+        // })
+        //
+        //
 
 
 
@@ -37,10 +53,13 @@ export default function NavBar( ) {
 
 
 
+<div className={navstyles.fixed}>
 
-        <div className={navstyles.container}>
 
-            <div className={navstyles.left}>
+
+        <div className={navstyles.container} ref={nav}>
+
+            <div className={navstyles.left} ref={left}>
                 <button className={navstyles.menuButton} type="button" data-uk-toggle="target: #offcanvas-usage">
                     <img className={navstyles.menuIcon} src="data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='4' rx='2' fill='white'/%3E%3Crect y='12' width='24' height='4' rx='2' fill='white'/%3E%3C/svg%3E%0A"/>
 
@@ -195,5 +214,7 @@ export default function NavBar( ) {
 
         </div>
 
+
+</div>
     )
 }

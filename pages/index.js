@@ -42,45 +42,6 @@ export default function Home() {
         gsap.registerPlugin(CSSRulePlugin);
         // uses el.current.querySelectorAll() internally
 
-        // const scroller = document.querySelector('.viewport');
-
-        //
-        // const bodyScrollBar = Scrollbar.init(document.querySelector('.mainbg'), { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
-        //
-        // ScrollTrigger.scrollerProxy(document.querySelector('.mainbg'), {
-        //     scrollTop(value) {
-        //         if (arguments.length) {
-        //             bodyScrollBar.scrollTop = value; // setter
-        //         }
-        //         return bodyScrollBar.scrollTop;    // getter
-        //     },
-        //     getBoundingClientRect() {
-        //         return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-        //     }
-        // });
-        // bodyScrollBar.addListener(ScrollTrigger.update);
-        //
-        // ScrollTrigger.defaults({ scroller:document.querySelector('.mainbg') });
-        //
-
-
-        //
-        // let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.1, delegateTo: document });
-        //
-        //
-        // bodyScrollBar.setPosition(0, 0);
-        // bodyScrollBar.track.xAxis.element.remove();
-        //
-        // ScrollTrigger.scrollerProxy(document.body, {
-        //     scrollTop(value) {
-        //         if (arguments.length) {
-        //             bodyScrollBar.scrollTop = value;
-        //         }
-        //         return bodyScrollBar.scrollTop;
-        //     }
-        // });
-        //
-        // bodyScrollBar.addListener(ScrollTrigger.update);
 
 
         const scroller = document.querySelector('.scroller');

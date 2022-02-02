@@ -11,6 +11,8 @@ import 'swiper/css';
 
 //
 // import { useLocomotiveScroll } from 'react-locomotive-scroll'
+
+
 function MyApp({ Component, pageProps }) {
   // const scroll = new LocomotiveScroll();
   //

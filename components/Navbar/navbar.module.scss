@@ -227,6 +227,7 @@
   display: flex;
   padding: 4em 133px;
   justify-content: space-between;
+
   //z-index: 100000;
 }
 
@@ -252,6 +253,7 @@
 }
 
 .right{
+  position: sticky;
   background: #000000;
   display: flex;
   align-items: center;
@@ -279,4 +281,22 @@
 
 .mobile{
   display: none;
+}
+.fixed {
+  //position: fixed;
+  //right: 0;
+  //left: 0;
+  //z-index: 10000000;
+  //top: 0;
+  //height: 80px;
+  //background: red;
+  //
+  //
+  //
+  //color: #fff;
+  //position: fixed;
+  //width: 100%;
+  //
+  //top: 0;
+
 }
