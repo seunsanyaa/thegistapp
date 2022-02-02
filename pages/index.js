@@ -70,7 +70,7 @@ export default function Home() {
 
         // uses el.current.querySelectorAll() internally
 
-        gsap.to(cont,1.5,{
+        gsap.to(cont,0.7,{
 
             visibility:"visible"
 

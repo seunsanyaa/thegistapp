@@ -348,7 +348,10 @@ export default function NewFriends( ) {
 <img ref={line3mobile} className={newfriendsstyles.line3Mobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643795682/Ellipse_162_4_corr1o.png"/>
 <img  ref={line4mobile} className={newfriendsstyles.line4Mobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643797405/Ellipse_161_3_y54o11.png"/>
 
-              <div className={newfriendsstyles.newfriendsbgMobile}>
+<img className={newfriendsstyles.newfriendsbgMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643838898/Ellipse_160_1_amaev8.png"/>
+
+
+              {/*<div className={newfriendsstyles.newfriendsbgMobile}>*/}
 
                   <div ref={headerMobile}>
 
@@ -361,7 +364,7 @@ export default function NewFriends( ) {
                       <p className={newfriendsstyles.paragraph}>Searching for a potential match...</p>
                   </div>
 
-              </div>
+              {/*</div>*/}
           <img ref={afroguyMobile} className={newfriendsstyles.afroguyImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643795743/Ellipse_179_1_vgy2e8.png"/>
           <img ref={sweaterMobile} className={newfriendsstyles.sweaterMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643795813/Ellipse_180_2_dcobni.png"/>
           <img ref={coverfaceMobile} className={newfriendsstyles.coverFaceMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643796298/Ellipse_181_1_wj74mg.png"/>

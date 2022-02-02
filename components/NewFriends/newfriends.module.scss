@@ -1,7 +1,7 @@
 
 
 
-@media (min-width:320px) and (max-width: 375px) {
+@media (min-width:320px) and (max-width: 348px) {
   .container{
     padding: 0em 0em !important;
     //text-align: center !important;
@@ -114,24 +114,24 @@
 
   .newfriendsbgMobile{
     position: absolute;
-    top : 155px !important;
-    left:72px !important;
-    background: #0C0C0C;
-    width: 180px !important;
-    height: 180px !important;
-    display: flex;
+    top : 160px !important;
+    left:80px !important;
+
+    width: 55% !important;    //height: 250px !important;
+    //display: flex;
 
 
     justify-content: center;
     align-items: center;
     vertical-align: center;
-
-    border-radius: 250px;
   }
 
 
   .header{
 
+    position: absolute;
+    top : 210px !important;
+    left:27% !important;
     font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
@@ -145,10 +145,14 @@
     text-align: center;
   }
   .paragraph{
+
+    position: absolute;
+    top : 250px !important;
+    left:28% !important;
     font-family: "Gilroy Regular";
     font-style: normal;
     font-weight: normal;
-    font-size: 12px !important;
+    font-size: 10px !important;
 
     line-height: 124%;
     text-align: center;
@@ -165,7 +169,7 @@
 
 
 
-@media (min-width:375px) and (max-width: 424px) {
+@media (min-width:350px) and (max-width: 424px) {
   .container{
     padding: 0em 0em !important;
     //text-align: center !important;
@@ -278,24 +282,24 @@
 
   .newfriendsbgMobile{
     position: absolute;
-    top : 165px !important;
-    left:87px !important;
-    background: #0C0C0C;
-    width: 210px !important;
-    height: 210px !important;
-    display: flex;
+    top : 150px !important;
+    left:72px !important;
+
+    width: 62% !important;    //height: 250px !important;
+    //display: flex;
 
 
     justify-content: center;
     align-items: center;
     vertical-align: center;
-
-    border-radius: 250px;
   }
 
 
   .header{
+    position: absolute;
 
+    top: 230px !important;
+    left: 30%!important;
     font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
@@ -309,6 +313,11 @@
 text-align: center;
   }
   .paragraph{
+
+
+    position: absolute !important;
+    top: 275px !important;
+    left: 27%!important;
     font-family: "Gilroy Regular";
     font-style: normal;
     font-weight: normal;
@@ -445,24 +454,28 @@ text-align: center;
 
   .newfriendsbgMobile{
     position: absolute;
-    top : 165px !important;
+    top : 163px !important;
     left:91px !important;
-    background: #0C0C0C;
-    width: 250px !important;
-    height: 250px !important;
-    display: flex;
+
+width: 250px !important;    //height: 250px !important;
+    //display: flex;
 
 
     justify-content: center;
     align-items: center;
     vertical-align: center;
 
-    border-radius: 250px;
+    //border-radius: 250px;
   }
 
 
   .header{
 
+    position: absolute;
+
+    top: 235px !important;
+    left: 117px !important;
+z-index: 10000;
     font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
@@ -477,6 +490,10 @@ text-align: center;
 
   }
   .paragraph{
+    position: absolute !important;
+    top: 280px !important;
+    left: 125px !important;
+    z-index: 10000;
     font-family: "Gilroy Regular";
     font-style: normal;
     font-weight: normal;
