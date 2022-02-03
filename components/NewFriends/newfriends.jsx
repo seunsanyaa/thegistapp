@@ -303,10 +303,14 @@ export default function NewFriends( ) {
     return (
 <>
 
+    <div>
+        <div ref={cont}></div>
+
+    </div>
       <div className={newfriendsstyles.container}>
 
           {/*<img className={newfriendsstyles.circle} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896228/Group_1622_hmq5jd.png"/>*/}
-          <div ref={cont}></div>
+
           <div className={newfriendsstyles.circle}  ref={circle}>
 
               <img ref={line1} className={newfriendsstyles.line1} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643753520/Ellipse_164_1_mavkmw.png"/>
