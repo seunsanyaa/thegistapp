@@ -16,9 +16,9 @@ import "swiper/css/pagination"
 SwiperCore.use([Pagination]);
 
 
-// import {gsap, Linear} from "gsap";
+import {gsap, Linear} from "gsap";
 
-import {gsap} from "gsap";
+// import {gsap} from "gsap";
 import { ExpoScaleEase } from "gsap/dist/EasePack";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from 'gsap/dist/CustomEase'
