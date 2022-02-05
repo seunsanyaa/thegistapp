@@ -1,6 +1,7 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
+
 import NavBar from "../components/Navbar/navbar";
 import Hero from "../components/Hero/hero";
 import AudioCharts from "../components/AudioChats/audiochats";
@@ -37,7 +38,7 @@ export default function Home() {
 
     useLocoScroll(!preloader)
 
-    const [timer , setTimer] = useState(4)
+    const [timer , setTimer] = useState(5)
 
     const id = useRef(null)
     const clear = ()=>{
@@ -76,6 +77,7 @@ export default function Home() {
 
 
         const GSAP = require("gsap/dist/CSSRulePlugin");
+
         const { CSSRulePlugin } = GSAP;
         gsap.registerPlugin(CSSRulePlugin);
         // uses el.current.querySelectorAll() internally
@@ -116,7 +118,7 @@ export default function Home() {
        //      ease: Linear.easeNone
        //  })
 
-        // animme.restart();
+
 
 
 
