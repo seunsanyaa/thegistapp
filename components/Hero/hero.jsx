@@ -23,7 +23,7 @@ export default function Hero( ) {
 
     useEffect(() => {
 
-
+        //
         gsap.from([headText.current], 1,{
             y:"100%",
             autoAlpha:0,
@@ -57,7 +57,7 @@ export default function Hero( ) {
     return (
 
 
-<div className={herostyles.container}>
+<div className={herostyles.container} data-scroll-section>
 
 
     <div className={herostyles.hideTextDiv}>

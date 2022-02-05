@@ -53,11 +53,11 @@ export default function NavBar( ) {
 
 
 
-<div className={navstyles.fixed}>
+<div className={navstyles.fixed} >
 
 
 
-        <div className={navstyles.container} ref={nav}>
+        <div className={navstyles.container} ref={nav} >
 
             <div className={navstyles.left} ref={left}>
                 <button className={navstyles.menuButton} type="button" data-uk-toggle="target: #offcanvas-usage">

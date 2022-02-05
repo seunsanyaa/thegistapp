@@ -22,79 +22,79 @@ export default function DownloadApp( ) {
     let mainText = useRef()
     let bigImageMobile = useRef()
     let containerMobile = useRef()
-    useEffect(() => {
-
-        const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
-            .fromTo([phoneImage.current],{
-            y:550
-
-
-            }, {
-
-
-            y:0,
-
-                // autoAlpha:0,
-
-                duration:1,
-                ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-
-
-
-            })
-
-
-
-
-
-        const ST = ScrollTrigger.create({
-            trigger:mainText.current,
-            scrub:true,
-            toggleActions: "play pause resume none",
-            onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-        });
-
-
-
-
-
-        const tlmobile = gsap.timeline({defaults: {duration: 1}, paused: true})
-            .fromTo([bigImageMobile.current],{
-                y:600
-
-
-            }, {
-
-
-                y:0,
-
-                // autoAlpha:0,
-
-                duration:1,
-                ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-
-
-
-            })
-
-
-
-
-
-        const STmobile = ScrollTrigger.create({
-            trigger:containerMobile.current,
-            scrub:true,
-            toggleActions: "play pause resume none",
-            onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
-        });
-
-
-
-    },[]);
+    // useEffect(() => {
+    //
+    //     const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
+    //         .fromTo([phoneImage.current],{
+    //         y:550
+    //
+    //
+    //         }, {
+    //
+    //
+    //         y:0,
+    //
+    //             // autoAlpha:0,
+    //
+    //             duration:1,
+    //             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+    //
+    //
+    //
+    //         })
+    //
+    //
+    //
+    //
+    //
+    //     const ST = ScrollTrigger.create({
+    //         trigger:mainText.current,
+    //         scrub:true,
+    //         toggleActions: "play pause resume none",
+    //         onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+    //     });
+    //
+    //
+    //
+    //
+    //
+    //     const tlmobile = gsap.timeline({defaults: {duration: 1}, paused: true})
+    //         .fromTo([bigImageMobile.current],{
+    //             y:600
+    //
+    //
+    //         }, {
+    //
+    //
+    //             y:0,
+    //
+    //             // autoAlpha:0,
+    //
+    //             duration:1,
+    //             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+    //
+    //
+    //
+    //         })
+    //
+    //
+    //
+    //
+    //
+    //     const STmobile = ScrollTrigger.create({
+    //         trigger:containerMobile.current,
+    //         scrub:true,
+    //         toggleActions: "play pause resume none",
+    //         onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
+    //     });
+    //
+    //
+    //
+    // },[]);
 
 
     return (
-<div className={downloadappstyles.containerOutside}>
+<div className={downloadappstyles.containerOutside} data-scroll-section>
       <div className={downloadappstyles.container} ref={container}>
 
 {/*<img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896614/Mask_Group_1_uqoyvt.png"/>*/}

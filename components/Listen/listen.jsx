@@ -31,40 +31,40 @@ export default function Listen( ) {
     let mainContainer= useRef()
 
     useEffect(() => {
-        const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
-            .fromTo([gistContainer.current], {
-            x:"100%",
-
-
-        },{
-            duration:3,
-
-            x:"0",
-
-
-
-
-            ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-
-
-        })
-
-
-
-
-        const ST = ScrollTrigger.create({
-            trigger:[gistContainer2.current],
-            scrub:true,
-            toggleActions: "restart pause resume none",
-            onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-        });
+        // const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
+        //     .fromTo([gistContainer.current], {
+        //     x:"100%",
+        //
+        //
+        // },{
+        //     duration:3,
+        //
+        //     x:"0",
+        //
+        //
+        //
+        //
+        //     ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+        //
+        //
+        // })
+        //
+        //
+        //
+        //
+        // const ST = ScrollTrigger.create({
+        //     trigger:[gistContainer2.current],
+        //     scrub:true,
+        //     toggleActions: "restart pause resume none",
+        //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+        // });
 
 
     }, []);
 
     return (
 
-<div className={listenstyles.container}>
+<div className={listenstyles.container} data-scroll-section>
 
 
     <div className={listenstyles.header} ref={mainContainer}>

@@ -31,87 +31,87 @@ export default function LiveRooms( ) {
 
     useEffect(() => {
 
-
-        gsap.fromTo([firstImage.current],
-            {
-                y:170,
-                autoAlpha:0
-
-            },
-            {
-                y:0,
-                autoAlpha:1,
-                // opacity:0,
-
-
-            scrollTrigger: container.current,
-            duration:0.3
-            //         css:{
-            //         visibility: "visible"
-            // }
-        });
-        gsap.fromTo([secondImage.current], {
-                y:170,
-            autoAlpha:0
-            },
-            {
-                y:0,
-                autoAlpha:1,
-
-
-
-            scrollTrigger: middleContainer.current,
-            delay:0.2,
-            duration:0.3
-            //         css:{
-            //         visibility: "visible"
-            // }
-        });
-        gsap.fromTo([thirdImage.current], {
-            y:170,
-            autoAlpha:0
-
-
-
-        },{
-            y:0,
-            autoAlpha:1,
-
-            scrollTrigger: secondContainer.current,
-            delay:0.35,
-            duration:0.3
-
-        })
-        gsap.fromTo([head.current],{
-
-            autoAlpha:0
-
-        }, {
-            // y:170,
-            autoAlpha:1,
-
-            scrollTrigger:textSection.current,
-            delay:0.4,
-            duration:0.4
-            //         css:{
-            //         visibility: "visible"
-            // }
-        })
-        gsap.fromTo([paragraph.current],{
-            autoAlpha:0
-
-        }, {
-            // y:170,
-            autoAlpha:1,
-
-            scrollTrigger: textSection.current,
-            delay:0.55,
-            duration:0.4
-            //         css:{
-            //         visibility: "visible"
-            // }
-        })
-
+        //
+        // gsap.fromTo([firstImage.current],
+        //     {
+        //         y:170,
+        //         autoAlpha:0
+        //
+        //     },
+        //     {
+        //         y:0,
+        //         autoAlpha:1,
+        //         // opacity:0,
+        //
+        //
+        //     scrollTrigger: container.current,
+        //     duration:0.3
+        //     //         css:{
+        //     //         visibility: "visible"
+        //     // }
+        // });
+        // gsap.fromTo([secondImage.current], {
+        //         y:170,
+        //     autoAlpha:0
+        //     },
+        //     {
+        //         y:0,
+        //         autoAlpha:1,
+        //
+        //
+        //
+        //     scrollTrigger: middleContainer.current,
+        //     delay:0.2,
+        //     duration:0.3
+        //     //         css:{
+        //     //         visibility: "visible"
+        //     // }
+        // });
+        // gsap.fromTo([thirdImage.current], {
+        //     y:170,
+        //     autoAlpha:0
+        //
+        //
+        //
+        // },{
+        //     y:0,
+        //     autoAlpha:1,
+        //
+        //     scrollTrigger: secondContainer.current,
+        //     delay:0.35,
+        //     duration:0.3
+        //
+        // })
+        // gsap.fromTo([head.current],{
+        //
+        //     autoAlpha:0
+        //
+        // }, {
+        //     // y:170,
+        //     autoAlpha:1,
+        //
+        //     scrollTrigger:textSection.current,
+        //     delay:0.4,
+        //     duration:0.4
+        //     //         css:{
+        //     //         visibility: "visible"
+        //     // }
+        // })
+        // gsap.fromTo([paragraph.current],{
+        //     autoAlpha:0
+        //
+        // }, {
+        //     // y:170,
+        //     autoAlpha:1,
+        //
+        //     scrollTrigger: textSection.current,
+        //     delay:0.55,
+        //     duration:0.4
+        //     //         css:{
+        //     //         visibility: "visible"
+        //     // }
+        // })
+        //
 
 
 
@@ -124,7 +124,7 @@ export default function LiveRooms( ) {
 
 
 
-  <div className={liveroomstyles.container} ref={container}>
+  <div className={liveroomstyles.container} ref={container} data-scroll-section>
 
       <div ref={middleContainer}></div>
 

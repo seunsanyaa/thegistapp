@@ -14,7 +14,7 @@ export default function Footer( ) {
 
     return (
 
-    <div className={footerstyles.container}>
+    <div className={footerstyles.container} data-scroll-section>
 
 
         <div className={footerstyles.top}>

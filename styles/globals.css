@@ -82,10 +82,43 @@ img{
 }
 }
 
-.hidden{
-  visibility: hidden;
+/*.hidden{*/
+/*  visibility: hidden;*/
+/*}*/
+
+
+.loader-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #191919;
+
+  color: white;
 }
 
+
+.loaderText{
+  font-size: 1.5vw;
+
+  text-transform: uppercase;
+
+  font-family: Gilroy;
+
+}
+
+.absolute{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+
+  background-color: black;
+  z-index: 1;
+
+}
 /*html.has-scroll-smooth {*/
 /*  overflow: hidden; }*/
 /*.has-scroll-smooth body {*/
