@@ -223,7 +223,7 @@
 
 .container{
 
-
+visibility: hidden;
   display: flex;
   padding: 4em 133px;
   justify-content: space-between;
@@ -236,9 +236,9 @@
   background: #000000;
   border-radius: 32px;
   border-color: black;
-  //display: flex;
-  //  align-items: center;
-  //  justify-content: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
   height: 48px;
   width: 124px;
   color: white;

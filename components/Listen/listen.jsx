@@ -7,6 +7,7 @@ import listenstyles from './listen.module.scss'
 
 import {useEffect, useRef, useState} from "react";
 import { Navigation, Scrollbar, A11y } from 'swiper';
+import anime from "animejs/lib/anime.es.js"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Pagination} from 'swiper';
@@ -15,6 +16,7 @@ import "swiper/css/pagination"
 // install Swiper modules
 SwiperCore.use([Pagination]);
 
+import { useInView } from 'react-intersection-observer';
 
 import {gsap, Linear} from "gsap";
 
@@ -26,10 +28,72 @@ gsap.registerPlugin(ExpoScaleEase,CustomEase,ScrollTrigger);
 
 export default function Listen( ) {
 
+    const [ref, inView] = useInView({
+        threshold: 0.4,
+        triggerOnce:true
+    })
+
+
     let gistContainer= useRef()
     let gistContainer2= useRef()
     let mainContainer= useRef()
 
+
+
+
+    const myScroll = anime({
+
+        targets:gistContainer.current,
+
+
+
+            translateX:-500,
+
+            duration:6000,
+            easing: 'linear'
+
+
+        })
+
+
+
+
+
+
+
+
+    // if(inView===true){
+    //
+    //
+    //     // const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
+    //     //     .fromTo([gistContainer.current], {
+    //     //     x:"100%",
+    //     //
+    //     //
+    //     // },{
+    //     //     duration:3,
+    //     //
+    //     //     x:"0",
+    //     //
+    //     //
+    //     //
+    //     //
+    //     //     ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+    //     //
+    //     //
+    //     // })
+    //     //
+    //     // const ST = ScrollTrigger.create({
+    //     //     trigger:[gistContainer2.current],
+    //     //     scrub:true,
+    //     //     toggleActions: "restart pause resume none",
+    //     //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+    //     // });
+    //
+    //
+    //
+    //
+    // }
     useEffect(() => {
         // const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
         //     .fromTo([gistContainer.current], {
@@ -64,12 +128,12 @@ export default function Listen( ) {
 
     return (
 
-<div className={listenstyles.container} data-scroll-section>
+<div className={listenstyles.container} data-scroll-section inView={inView} onScroll={myScroll}>
 
 
     <div className={listenstyles.header} ref={mainContainer}>
 
-        <h3 className={listenstyles.head}>
+        <h3 className={listenstyles.head} ref={ref}>
             Listen to gists
         </h3>
 

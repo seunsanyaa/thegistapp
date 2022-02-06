@@ -17,11 +17,30 @@ import CustomEase from 'gsap/dist/CustomEase'
 gsap.registerPlugin(ExpoScaleEase,CustomEase);
 export default function Hero( ) {
     let headText = useRef();
+    let bottom = useRef();
     let q = gsap.utils.selector(headText);
     // const tl = useRef();
 
 
     useEffect(() => {
+
+
+        gsap.fromTo([bottom.current],{
+
+                autoAlpha:0,
+                visibility:'hidden'
+
+
+            },
+            {
+
+                autoAlpha:1,
+                delay:0.5,
+                duration:1.5
+
+
+
+            })
 
         //
         gsap.from([headText.current], 1,{
@@ -30,7 +49,7 @@ export default function Hero( ) {
 
             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-            ,delay:1.4
+            ,delay:1.1
             //         css:{
             //         visibility: "visible"
             // }
@@ -84,7 +103,7 @@ export default function Hero( ) {
     </div>
 
 
-    <div className={herostyles.bottom}>
+    <div className={herostyles.bottom} ref={bottom}>
 
         <div className={herostyles.division}>
 

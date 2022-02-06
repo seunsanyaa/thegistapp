@@ -30,15 +30,22 @@ export default function NavBar( ) {
         // do whatever you want to do with the plugin, its Working now...
         // for example
         //
-        // gsap.to([nav.current],{
-        //
-        //     scrollTrigger:{
-        //         trigger: nav.current,
-        //         pin: true,
-        //         scrub: true
-        //     }
-        //
-        // })
+        gsap.fromTo([nav.current],{
+
+            autoAlpha:0,
+            visibility:'hidden'
+
+
+            },
+        {
+
+            autoAlpha:1,
+            delay:0.5,
+            duration:1.5
+
+
+
+        })
         //
         //
 

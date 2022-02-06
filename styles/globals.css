@@ -21,13 +21,15 @@ a {
 .mainbg
 {
   position: relative;
+/*visibility: hidden;*/
 
+  height: 100vh;
   /*padding-top: 100px;*/
 }
 
 
 .hero{
-
+visibility: hidden;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -125,3 +127,17 @@ img{
 /*  overflow: hidden; }*/
 
 
+.path {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+  /*animation: dash 5s linear alternate infinite;*/
+}
+
+/*@keyframes dash {*/
+/*  from {*/
+/*    stroke-dashoffset: 1;*/
+/*  }*/
+/*  to {*/
+/*    stroke-dashoffset: 0;*/
+/*  }*/
+/*}*/
