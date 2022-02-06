@@ -13,7 +13,7 @@ import Footer from "../components/Footer/footer";
 import { gsap ,Linear } from "gsap";
 import {useEffect, useRef, useState} from "react";
 
-
+import {SpinnerRoundOutlined } from 'spinners-react';
 
 import { useInView } from 'react-intersection-observer';
 
@@ -176,7 +176,8 @@ export default function Home() {
       </Head>
             {preloader ? <div className='loader-wrapper absolute'>
 
-                <h1 className='loaderText'>Loading.....</h1>
+                    <SpinnerRoundOutlined enabled={true} size = {100} color={'#ed1c24'}/>
+
                 </div> :
 
 

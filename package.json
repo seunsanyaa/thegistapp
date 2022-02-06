@@ -30,6 +30,7 @@
     "sass": "^1.49.0",
     "scss": "^0.2.4",
     "smooth-scrollbar": "^8.7.4",
+    "spinners-react": "^1.0.6",
     "styled-components": "^5.3.3",
     "swiper": "^7.4.1",
     "uikit": "file:uikit"
