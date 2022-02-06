@@ -30,7 +30,7 @@ import useLocoScroll from "../components/hooks/useLocoScroll";
 export default function Home() {
 
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.4,
         triggerOnce:true
     })
 
