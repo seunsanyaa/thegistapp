@@ -24,6 +24,7 @@ export default function useLocoScroll(start){
                 el:scrollEl,
                 smooth: true,
                 multiplier:0.5,
+               repeat:false,
 
                 class:'is-reveal',
 

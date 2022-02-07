@@ -48,7 +48,7 @@ export default function AudioCharts( ) {
             })
             .fromTo([redimage.current],
             0.7, {scale:0.5, autoAlpha:0},
-            {scale:1,autoAlpha:1,scrollTrigger:redimage.current, ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+            {scale:1,autoAlpha:1, ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
 
             },"-=0.3");
 
@@ -160,10 +160,10 @@ export default function AudioCharts( ) {
 
 
 
+
 <img className={audiostyles.redplayer} ref={redimage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643216129/Frame_50_2_zieqhw.png"/>
 
 </div>
-
 
 
             <div className={audiostyles.appstoreSectionMobile}>
@@ -172,10 +172,13 @@ export default function AudioCharts( ) {
 
 
                 <img className={audiostyles.storeMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643029047/google_play_store_icon_1_htdh3f.png"/>
+                <div id="fixed"> </div>
 
             </div>
 
         </div>
+
+
         </div>
 
 

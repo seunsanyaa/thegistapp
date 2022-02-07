@@ -422,6 +422,7 @@ align-items: center;
 
   margin-bottom: 120px;
 
+
 }
 
 .imageContainer{
@@ -434,33 +435,34 @@ align-items: center;
 .firstImage{
   position: absolute;
   top : 40px;
-  visibility: visible;
+  //visibility: visible;
+  visibility: hidden;
 }
 .secondImage{
   position: absolute;
   z-index: 100;
   left: 35px;
   top : 21px;
-  visibility: visible;
+  visibility: hidden;
 }
 
 .thirdImage{
   position: absolute;
   z-index: 110;
   left: 87px;
-  visibility: visible;
+  visibility: hidden;
 }
 .textSection{
   padding-left: 120px;
   padding-right: 3em;
-  visibility: visible;
 }
 .head{
   font-family: Gilroy;
 
   font-size: 40px;
   line-height: 50px;
-  visibility: visible;
+  //visibility: visible;
+  visibility: hidden;
 
 margin: unset;
   color: #FFFFFF;
@@ -475,8 +477,9 @@ padding-top: 24px;
 margin: unset;
 
   color: #D7D7D7;
+  visibility: hidden;
 
   opacity: 0.64;
-  visibility: visible;
+  //visibility: visible;
 }
 

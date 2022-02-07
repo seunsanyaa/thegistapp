@@ -11,6 +11,7 @@ import {gsap, Linear} from "gsap";
 import { ExpoScaleEase } from "gsap/dist/EasePack";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from 'gsap/dist/CustomEase'
+import {useInView} from "react-intersection-observer";
 gsap.registerPlugin(ExpoScaleEase,CustomEase, Linear,ScrollTrigger);
 
 
@@ -49,6 +50,268 @@ export default function NewFriends( ) {
     let blueImageMobile = useRef()
 
 
+    const [ref, inView] = useInView({
+        threshold: 0.15,
+        triggerOnce:true
+    })
+
+
+    if(inView===true){
+
+            let tl =  gsap.timeline();
+
+            tl.fromTo([line1.current],
+                 {scale:0.2, autoAlpha:0,visibility:'hidden'},
+                {scale:1,autoAlpha:1,
+
+                    duration:2,
+                    ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                })
+                .fromTo([line2.current],
+                 {scale:0.2, autoAlpha:0},
+                {scale:1, autoAlpha:1,
+                    duration:3.5,
+
+
+                    ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 ")
+                    )
+
+
+                },"-=3.5")
+                .fromTo([line3.current],
+                {scale:0.2, autoAlpha:0},
+                {scale:1, autoAlpha:1,
+
+                    duration:2.5,
+
+                    ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                }, "-=2.5")
+                .fromTo([line4.current],
+                         {scale:0.2,autoAlpha:0},
+                        {scale:1,
+                            duration:1.2,
+                            autoAlpha:1,
+                            // scrollTrigger:line4.current,
+                            // scrollTrigger:{
+                            //     trigger:cont.current,
+                            //     scrub:1
+                            //
+                            // },
+                            ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                        },"-=1.8")
+                .fromTo([sweater.current],
+                         { opacity:0,autoAlpha:0},
+                        {opacity:1,
+                            autoAlpha:1,
+                            //
+                            // delay:9,
+
+
+
+
+
+                            duration:0.9,
+                            // scrollTrigger:sweater.current,
+
+                        },"-=0.5")
+        .fromTo([afroguy.current],
+                         { opacity:0, autoAlpha:0},
+                        {opacity:1,
+                            duration:0.9,
+                            autoAlpha:1
+
+                            // scrollTrigger:afroguy.current,
+                        }, "-=0.9"
+        )
+                .fromTo([coverface.current],
+                    { opacity:0, autoAlpha:0},
+                {opacity:1,
+
+                    delay:0.5,
+                    duration:0.5,
+                    autoAlpha:1,
+                    // scrollTrigger:coverface.current,
+                },"-=1")
+                .fromTo([afrolady.current],
+                { opacity:0,autoAlpha:0},
+                {opacity:1,
+                    duration:0.5,
+                    autoAlpha:1
+                    // scrollTrigger:afrolady.current,
+                },"-=0.5")
+                .fromTo([header.current],
+                { opacity:0,autoAlpha:0},
+                {opacity:1,
+                    duration:0.5,
+                    autoAlpha:1
+                    // scrollTrigger:header.current,
+                },"-=0.5")
+                .fromTo([southafrica.current],
+                { opacity:0,autoAlpha:0},
+                {opacity:1,
+                    autoAlpha:1,
+                    delay:0.5,
+                    duration:0.5,
+                    // scrollTrigger:southafrica.current,
+                },"-=0.6")
+                .fromTo([blueImage.current],
+                { opacity:0,autoAlpha:0},
+                {opacity:1,
+                    autoAlpha:1,
+                    duration:0.5,
+                    // scrollTrigger:blueImage.current,
+                }, "-=0.5");
+
+
+
+            //
+            // const ST = ScrollTrigger.create({
+            //     trigger:[cont.current],
+            //     scrub:true,
+            //     toggleActions: "restart pause resume none",
+            //
+            //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+            // });
+
+
+
+
+
+
+            let tlmobile =  gsap.timeline();
+
+            tlmobile.fromTo([line1mobile.current],
+                {scale:0.2, autoAlpha:0},
+                {scale:1,autoAlpha:1,
+
+                    duration:2,
+                    ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                })
+                .fromTo([line2mobile.current],
+                    {scale:0.2, autoAlpha:0},
+                    {scale:1, autoAlpha:1,
+                        duration:3.5,
+
+
+                        ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 ")
+                        )
+
+
+                    },"-=3.5")
+                .fromTo([line3mobile.current],
+                    {scale:0.2, autoAlpha:0},
+                    {scale:1, autoAlpha:1,
+
+                        duration:2.5,
+                        // scrollTrigger:line2.current,
+                        // scrollTrigger:{
+                        //     trigger:cont.current,
+                        //     scrub:true
+                        //
+                        // },
+                        ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                    }, "-=2.5")
+                .fromTo([line4mobile.current],
+                    {scale:0.2,autoAlpha:0},
+                    {scale:1,
+                        duration:1,
+                        autoAlpha:1,
+                        // scrollTrigger:line4.current,
+                        // scrollTrigger:{
+                        //     trigger:cont.current,
+                        //     scrub:1
+                        //
+                        // },
+                        ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
+                    },"-=1.1")
+                .fromTo([sweaterMobile.current],
+                    { opacity:0,autoAlpha:0},
+                    {opacity:1,
+                        autoAlpha:1,
+                        //
+                        // delay:9,
+
+
+
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1"),
+
+
+                        duration:0.8,
+                        // scrollTrigger:sweater.current,
+
+                    },"-=0.3")
+                .fromTo([afroguyMobile.current],
+                    { opacity:0, autoAlpha:0},
+                    {opacity:1,
+                        duration:0.5,
+                        autoAlpha:1,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:afroguy.current,
+                    }, "-=0.8"
+                )
+                .fromTo([coverfaceMobile.current],
+                    { opacity:0,autoAlpha:0},
+                    {opacity:1,
+                        autoAlpha:1,
+
+                        delay:0.5,
+                        duration:0.5,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:coverface.current,
+                    },"-=0.9")
+                .fromTo([afroladyMobile.current],
+                    { opacity:0, autoAlpha:0},
+                    {opacity:1,
+                        autoAlpha:1,
+                        duration:0.5,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:afrolady.current,
+                    },"-=0.5")
+                .fromTo([headerMobile.current],
+                    { opacity:0, autoAlpha:0},
+                    {opacity:1,
+                        autoAlpha:1,
+                        duration:0.5,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:header.current,
+                    },"-=0.5")
+                .fromTo([southafricaMobile.current],
+                    { opacity:0,autoAlpha:0},
+                    {opacity:1,
+
+                        autoAlpha:1,
+                        delay:0.5,
+                        duration:0.5,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:southafrica.current,
+                    },"-=0.7")
+                .fromTo([blueImageMobile.current],
+                    { opacity:0,autoAlpha:0},
+                    {opacity:1,
+                        autoAlpha:1,
+                        duration:0.5,
+                        ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+                        // scrollTrigger:blueImage.current,
+                    }, "-=0.5");
+
+
+            // const STMobile = ScrollTrigger.create({
+            //     trigger:[cont.current],
+            //     scrub:true,
+            //     toggleActions: "restart pause resume none",
+            //
+            //     onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
+            // });
+
+
+
+    }
 
 
 
@@ -303,15 +566,15 @@ export default function NewFriends( ) {
     return (
 <>
 
-    <div>
-        <div ref={cont}></div>
+    <div inView={inView}>
+        {/*<div ref={cont}></div>*/}
 
-    </div>
-      <div className={newfriendsstyles.container} data-scroll-section>
+      <div className={newfriendsstyles.container} data-scroll-section  ref={ref} >
 
           {/*<img className={newfriendsstyles.circle} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896228/Group_1622_hmq5jd.png"/>*/}
 
-          <div className={newfriendsstyles.circle}  ref={circle}>
+
+          <div className={newfriendsstyles.circle}  ref={circle} >
 
               <img ref={line1} className={newfriendsstyles.line1} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643753520/Ellipse_164_1_mavkmw.png"/>
 
@@ -352,6 +615,7 @@ export default function NewFriends( ) {
           {/*<img className={newfriendsstyles.circleMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643063219/Group_1623_2_idcsdp.png"/>*/}
 
 
+
           <div className={newfriendsstyles.circleMobile}>
 
 
@@ -387,10 +651,14 @@ export default function NewFriends( ) {
           <img ref={southafricaMobile} className={newfriendsstyles.southAfricaMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643796729/Ellipse_182_1_ein8su.png"/>
           <img ref={afroladyMobile} className={newfriendsstyles.afroladyImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643797054/Ellipse_178_1_gashas.png"/>
           <img ref={blueImageMobile} className={newfriendsstyles.blueImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643797982/Ellipse_177_3_bpokxf.png"/>
-
           </div>
 
+
+
       </div>
+
+    </div>
+
 
 </>
     )

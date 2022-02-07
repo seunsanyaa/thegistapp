@@ -386,10 +386,17 @@ font-family: Gilroy Regular;
   margin-top: unset;
   padding-top: 8px;
 }
+
+.floated{
+
+}
 .gistsContainer{
   display: flex;
-  overflow-x: hidden;
-  overflow-y: hidden;
+
+  //overflow-x: hidden;
+  //overflow-y: hidden;
+
+
 //z-index: 2;
   margin-top: 56px;
 }

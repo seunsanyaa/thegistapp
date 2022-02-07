@@ -13,6 +13,7 @@ import {gsap, Linear} from "gsap";
 import { ExpoScaleEase } from "gsap/dist/EasePack";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomEase from 'gsap/dist/CustomEase'
+import listenstyles from "../Listen/listen.module.scss";
 gsap.registerPlugin(ExpoScaleEase,CustomEase, Linear,ScrollTrigger);
 
 export default function DownloadApp( ) {
@@ -96,7 +97,6 @@ export default function DownloadApp( ) {
     return (
 <div className={downloadappstyles.containerOutside} data-scroll-section>
       <div className={downloadappstyles.container} ref={container}>
-
 {/*<img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896614/Mask_Group_1_uqoyvt.png"/>*/}
           <div className={downloadappstyles.textSide} ref={mainText}>
 
@@ -104,6 +104,7 @@ export default function DownloadApp( ) {
                   Download the app to get started
               </h3>
 
+              <div id="fixedish" ></div>
 
 
               <div className={downloadappstyles.appstoreSection}>
@@ -121,7 +122,7 @@ export default function DownloadApp( ) {
 
           </div>
 
-          <img ref={phoneImage} className={downloadappstyles.phoneImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896956/Rectangle_qlrtrx.png"/>
+          <img ref={phoneImage} data-scroll data-scroll-delay="10" data-scroll-offset="20, 20%" data-scroll-direction="vertical" data-scroll-speed="10" data-scroll-target="#fixedish"  data-scroll-repeat="false"  className={downloadappstyles.phoneImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896956/Rectangle_qlrtrx.png" />
 
           <img className={downloadappstyles.gistLogo} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642897013/Group_1611_hmmol5.png"/>
 
