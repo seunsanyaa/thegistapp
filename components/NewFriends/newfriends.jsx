@@ -569,7 +569,9 @@ export default function NewFriends( ) {
     <div inView={inView}>
         {/*<div ref={cont}></div>*/}
 
-      <div className={newfriendsstyles.container} data-scroll-section  ref={ref} >
+
+        <div  ref={ref}></div>
+      <div className={newfriendsstyles.container} data-scroll-section  >
 
           {/*<img className={newfriendsstyles.circle} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896228/Group_1622_hmq5jd.png"/>*/}
 
