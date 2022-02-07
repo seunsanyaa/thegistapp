@@ -129,7 +129,7 @@ export default function AudioCharts( ) {
         <div className={audiostyles.container} inView={inView}>
 
 <div ref={ref}>
-
+</div>
 
             <div className={audiostyles.textSide} >
 
@@ -178,7 +178,7 @@ export default function AudioCharts( ) {
 
             </div>
 
-        </div>
+
         </div>
 
         </div>
