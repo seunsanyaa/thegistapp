@@ -8,6 +8,7 @@ import downloadappstyles from './downloadapp.module.scss'
 
 import {useEffect, useRef, useState} from "react";
 import audiostyles from "../AudioChats/audiochats.module.scss";
+import {useInView} from "react-intersection-observer";
 
 import {gsap, Linear} from "gsap";
 import { ExpoScaleEase } from "gsap/dist/EasePack";
@@ -23,6 +24,81 @@ export default function DownloadApp( ) {
     let mainText = useRef()
     let bigImageMobile = useRef()
     let containerMobile = useRef()
+
+    const [ref, inView] = useInView({
+        threshold: 0.15,
+        triggerOnce:true
+    })
+
+
+    if(inView===true){
+
+
+
+            const tl = gsap.timeline()
+                .fromTo([phoneImage.current],{
+                y:550
+
+
+                }, {
+
+
+                y:0,
+
+                    // autoAlpha:0,
+
+                    duration:1.3,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+
+
+                })
+
+
+
+
+            //
+            // const ST = ScrollTrigger.create({
+            //     trigger:mainText.current,
+            //     scrub:true,
+            //     toggleActions: "play pause resume none",
+            //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
+            // });
+            //
+
+
+
+
+            const tlmobile = gsap.timeline()
+                .fromTo([bigImageMobile.current],{
+                    y:600
+
+
+                }, {
+
+
+                    y:0,
+
+                    // autoAlpha:0,
+
+                    duration:1.3,
+                    ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+
+    }
+
     // useEffect(() => {
     //
     //     const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
@@ -95,17 +171,21 @@ export default function DownloadApp( ) {
 
 
     return (
-<div className={downloadappstyles.containerOutside} data-scroll-section>
-      <div className={downloadappstyles.container} ref={container}>
+<div className={downloadappstyles.containerOutside} data-scroll-section inView={inView}>
+
+
+<div ref={ref}>
+
+
+    <div className={downloadappstyles.container} ref={container}>
+
+
 {/*<img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896614/Mask_Group_1_uqoyvt.png"/>*/}
           <div className={downloadappstyles.textSide} ref={mainText}>
 
               <h3 className={downloadappstyles.mainText}>
                   Download the app to get started
               </h3>
-
-              <div id="fixedish" ></div>
-
 
               <div className={downloadappstyles.appstoreSection}>
 
@@ -122,7 +202,7 @@ export default function DownloadApp( ) {
 
           </div>
 
-          <img ref={phoneImage} data-scroll data-scroll-delay="10" data-scroll-offset="20, 20%" data-scroll-direction="vertical" data-scroll-speed="10" data-scroll-target="#fixedish"  data-scroll-repeat="false"  className={downloadappstyles.phoneImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896956/Rectangle_qlrtrx.png" />
+          <img ref={phoneImage}  className={downloadappstyles.phoneImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896956/Rectangle_qlrtrx.png" />
 
           <img className={downloadappstyles.gistLogo} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642897013/Group_1611_hmmol5.png"/>
 
@@ -159,6 +239,7 @@ export default function DownloadApp( ) {
 
 
     </div>
+</div>
 
 </div>
     )

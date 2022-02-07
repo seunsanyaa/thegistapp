@@ -4,8 +4,23 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
+}
+
+
+body::-webkit-scrollbar {
+  width: 0em;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: unset;    /* color of the scroll thumb */
+  border-radius: 0em;       /* roundness of the scroll thumb */
+  border: none;  /* creates padding around scroll thumb */
 }
 
 a {
@@ -18,12 +33,23 @@ a {
   /*overflow-x: h*/
 ;
 }
+
+@media (min-width: 1440px) {
+
+  .mainbg
+  {
+    height: 100vh;
+    /*visibility: hidden;*/
+
+    /*padding-top: 100px;*/
+  }
+
+}
 .mainbg
 {
   position: relative;
 /*visibility: hidden;*/
 
-  height: 100vh;
   /*padding-top: 100px;*/
 }
 
