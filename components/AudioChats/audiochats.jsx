@@ -128,8 +128,10 @@ export default function AudioCharts( ) {
         <div className={audiostyles.containerOutside} data-scroll-section>
         <div className={audiostyles.container} inView={inView}>
 
+<div ref={ref}>
 
-            <div className={audiostyles.textSide} ref={ref}>
+
+            <div className={audiostyles.textSide} >
 
                 <h3 className={audiostyles.text}>
                     A whole new experience to audio chats <img className={audiostyles.emoji} width={50} src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/126/speech-balloon_1f4ac.png"/>.
@@ -177,7 +179,7 @@ export default function AudioCharts( ) {
             </div>
 
         </div>
-
+        </div>
 
         </div>
 
