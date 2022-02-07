@@ -216,8 +216,10 @@ export default function LiveRooms( ) {
   <div className={liveroomstyles.container} ref={container} data-scroll-section inView={inView}>
 
       <div ref={middleContainer}></div>
+<div ref={ref}>
 
-<div className={liveroomstyles.imageContainer} ref={secondContainer} ref={ref}>
+
+<div className={liveroomstyles.imageContainer} ref={secondContainer} >
       {/*<img className={liveroomstyles.images} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642895249/Group_1609_zyrxlg.png"/>*/}
 <img ref={firstImage} className={liveroomstyles.firstImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643288305/image_3_1_viswd1.png"/>
      <img ref={secondImage} className={liveroomstyles.secondImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1643288312/image_2_wudrp8.png"/>
@@ -236,6 +238,8 @@ export default function LiveRooms( ) {
           </p>
 
       </div>
+
+  </div>
 
   </div>
 
