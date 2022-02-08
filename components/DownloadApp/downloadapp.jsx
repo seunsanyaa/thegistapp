@@ -31,7 +31,7 @@ export default function DownloadApp( ) {
     })
 
     const [ref2, inView2] = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce:true
     })
 
