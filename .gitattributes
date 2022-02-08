@@ -1,1 +1,1 @@
- linguist-language=javascript
+*.html .scss linguist-detectable=false
