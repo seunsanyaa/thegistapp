@@ -20,7 +20,7 @@ gsap.registerPlugin(ExpoScaleEase,CustomEase, Linear,ScrollTrigger);
 
 export default function AudioCharts( ) {
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.9,
         triggerOnce:true
     })
 

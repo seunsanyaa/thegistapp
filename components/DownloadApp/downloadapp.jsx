@@ -43,11 +43,12 @@ export default function DownloadApp( ) {
 
             const tl = gsap.timeline()
                 .fromTo([phoneImage.current],{
+                    autoAlpha:0,
                 y:550
 
 
                 }, {
-
+autoAlpha:1,
 
                 y:0,
 
@@ -89,11 +90,12 @@ export default function DownloadApp( ) {
 
         const tlmobile = gsap.timeline()
             .fromTo([bigImageMobile.current],{
+                autoAlpha:0,
                 y:800
 
 
             }, {
-
+autoAlpha:1,
 
                 y:0,
 

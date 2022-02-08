@@ -404,12 +404,12 @@ text-align: center;
     margin: 0 auto !important;
   }
 
-  .phoneImage{
-   //padding-top: 10em;
-
-    //
-    //transform: translateY(-550px)
-  }
+//  .phoneImage{
+//   //padding-top: 10em;
+//visibility: hidden;
+//    //
+//    //transform: translateY(-550px)
+//  }
 
 }
 .containerOutside{
@@ -458,4 +458,15 @@ text-align: center;
   display: none;
   position: relative;
   overflow: hidden;
+}
+
+.phoneImage{
+  //padding-top: 10em;
+  visibility: hidden;
+  //
+  //transform: translateY(-550px)
+}
+
+.bigImageMobile{
+  visibility: hidden;
 }

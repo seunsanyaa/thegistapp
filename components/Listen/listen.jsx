@@ -217,7 +217,7 @@ export default function Listen( ) {
     </div>
 
 
-    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" className={listenstyles.floated}  data-scroll-repeat="false" >
+    <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" className={listenstyles.floated} >
 
         <div className={listenstyles.gistsContainer}  ref={gistContainer} >
 
