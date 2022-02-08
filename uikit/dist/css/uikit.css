@@ -4201,6 +4201,7 @@ select.uk-form-width-xsmall {
  * Adopts `uk-close`
  ========================================================================== */
 .uk-offcanvas-close {
+  cursor:pointer;
   background: #000000;
   border-radius: 32px;
   border-color: black;
