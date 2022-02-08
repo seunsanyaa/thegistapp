@@ -5,10 +5,7 @@ import "locomotive-scroll/src/locomotive-scroll.scss"
 
 
 function MyApp({ Component, pageProps }) {
-  // const scroll = new LocomotiveScroll();
-  //
 
-  // const { scroll } = useLocomotiveScroll()
   return <Component {...pageProps} />
 }
 

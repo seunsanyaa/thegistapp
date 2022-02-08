@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-// import styles from '../../styles/Home.module.css'
-// import navstyles from './navbar.module.scss'
+
 import newfriendsstyles from './newfriends.module.scss'
 
 
@@ -91,27 +90,21 @@ export default function NewFriends( ) {
                         {scale:1,
                             duration:1.2,
                             autoAlpha:1,
-                            // scrollTrigger:line4.current,
-                            // scrollTrigger:{
-                            //     trigger:cont.current,
-                            //     scrub:1
-                            //
-                            // },
+
                             ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
                         },"-=1.8")
                 .fromTo([sweater.current],
                          { opacity:0,autoAlpha:0},
                         {opacity:1,
                             autoAlpha:1,
-                            //
-                            // delay:9,
+
 
 
 
 
 
                             duration:0.9,
-                            // scrollTrigger:sweater.current,
+
 
                         },"-=0.5")
         .fromTo([afroguy.current],
@@ -120,7 +113,6 @@ export default function NewFriends( ) {
                             duration:0.9,
                             autoAlpha:1
 
-                            // scrollTrigger:afroguy.current,
                         }, "-=0.9"
         )
                 .fromTo([coverface.current],
@@ -130,21 +122,21 @@ export default function NewFriends( ) {
                     delay:0.5,
                     duration:0.5,
                     autoAlpha:1,
-                    // scrollTrigger:coverface.current,
+
                 },"-=1")
                 .fromTo([afrolady.current],
                 { opacity:0,autoAlpha:0},
                 {opacity:1,
                     duration:0.5,
                     autoAlpha:1
-                    // scrollTrigger:afrolady.current,
+
                 },"-=0.5")
                 .fromTo([header.current],
                 { opacity:0,autoAlpha:0},
                 {opacity:1,
                     duration:0.5,
                     autoAlpha:1
-                    // scrollTrigger:header.current,
+
                 },"-=0.5")
                 .fromTo([southafrica.current],
                 { opacity:0,autoAlpha:0},
@@ -162,16 +154,6 @@ export default function NewFriends( ) {
                     // scrollTrigger:blueImage.current,
                 }, "-=0.5");
 
-
-
-            //
-            // const ST = ScrollTrigger.create({
-            //     trigger:[cont.current],
-            //     scrub:true,
-            //     toggleActions: "restart pause resume none",
-            //
-            //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-            // });
 
 
 
@@ -203,12 +185,7 @@ export default function NewFriends( ) {
                     {scale:1, autoAlpha:1,
 
                         duration:1,
-                        // scrollTrigger:line2.current,
-                        // scrollTrigger:{
-                        //     trigger:cont.current,
-                        //     scrub:true
-                        //
-                        // },
+
                         ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
                     }, "-=0.6")
                 .fromTo([line4mobile.current],
@@ -216,12 +193,7 @@ export default function NewFriends( ) {
                     {scale:1,
                         duration:0.5,
                         autoAlpha:1,
-                        // scrollTrigger:line4.current,
-                        // scrollTrigger:{
-                        //     trigger:cont.current,
-                        //     scrub:1
-                        //
-                        // },
+
                         ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
                     },"-=0.5")
                 .fromTo([sweaterMobile.current],
@@ -229,7 +201,6 @@ export default function NewFriends( ) {
                     {opacity:1,
                         autoAlpha:1,
                         //
-                        // delay:9,
 
 
 
@@ -237,7 +208,6 @@ export default function NewFriends( ) {
 
 
                         duration:0.8,
-                        // scrollTrigger:sweater.current,
 
                     },"-=0.5")
                 .fromTo([afroguyMobile.current],
@@ -247,7 +217,6 @@ export default function NewFriends( ) {
                         autoAlpha:1,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:afroguy.current,
                     }, "-=0.8"
                 )
                 .fromTo([coverfaceMobile.current],
@@ -259,7 +228,6 @@ export default function NewFriends( ) {
                         duration:0.5,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:coverface.current,
                     },"-=0.9")
                 .fromTo([afroladyMobile.current],
                     { opacity:0, autoAlpha:0},
@@ -268,7 +236,6 @@ export default function NewFriends( ) {
                         duration:0.5,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:afrolady.current,
                     },"-=0.5")
                 .fromTo([headerMobile.current],
                     { opacity:0, autoAlpha:0},
@@ -277,7 +244,6 @@ export default function NewFriends( ) {
                         duration:0.5,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:header.current,
                     },"-=0.5")
                 .fromTo([southafricaMobile.current],
                     { opacity:0,autoAlpha:0},
@@ -288,7 +254,6 @@ export default function NewFriends( ) {
                         duration:0.5,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:southafrica.current,
                     },"-=0.7")
                 .fromTo([blueImageMobile.current],
                     { opacity:0,autoAlpha:0},
@@ -297,267 +262,13 @@ export default function NewFriends( ) {
                         duration:0.5,
                         ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
 
-                        // scrollTrigger:blueImage.current,
                     }, "-=0.5");
 
 
-            // const STMobile = ScrollTrigger.create({
-            //     trigger:[cont.current],
-            //     scrub:true,
-            //     toggleActions: "restart pause resume none",
-            //
-            //     onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
-            // });
 
 
 
     }
-
-
-
-    //
-    //
-    // useEffect(() => {
-    //
-    //
-    //
-    //     let tl =  gsap.timeline({defaults: {duration: 1}, paused: true});
-    //
-    //     tl.fromTo([line1.current],
-    //          {scale:0.2, autoAlpha:0},
-    //         {scale:1,autoAlpha:1,
-    //
-    //             duration:4.5,
-    //             ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //         })
-    //         .fromTo([line2.current],
-    //          {scale:0.2, autoAlpha:0},
-    //         {scale:1, autoAlpha:1,
-    //             duration:3.5,
-    //
-    //
-    //             ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 ")
-    //             )
-    //
-    //
-    //         },"-=3.5")
-    //         .fromTo([line3.current],
-    //         {scale:0.2, autoAlpha:0},
-    //         {scale:1, autoAlpha:1,
-    //
-    //             duration:2.5,
-    //
-    //             ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //         }, "-=2.5")
-    //         .fromTo([line4.current],
-    //                  {scale:0.2},
-    //                 {scale:1,
-    //                     duration:1,
-    //                     // scrollTrigger:line4.current,
-    //                     // scrollTrigger:{
-    //                     //     trigger:cont.current,
-    //                     //     scrub:1
-    //                     //
-    //                     // },
-    //                     ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //                 })
-    //         .fromTo([sweater.current],
-    //                  { opacity:0},
-    //                 {opacity:1,
-    //                     //
-    //                     // delay:9,
-    //
-    //
-    //
-    //
-    //
-    //                     duration:0.8,
-    //                     // scrollTrigger:sweater.current,
-    //
-    //                 })
-    // .fromTo([afroguy.current],
-    //                  { opacity:0, autoAlpha:0},
-    //                 {opacity:1,
-    //                     duration:0.5,
-    //                     autoAlpha:1,
-    //
-    //                     // scrollTrigger:afroguy.current,
-    //                 }, "-=0.5"
-    // )
-    //         .fromTo([coverface.current],
-    //         { opacity:0},
-    //         {opacity:1,
-    //
-    //             delay:0.5,
-    //             duration:0.5,
-    //             // scrollTrigger:coverface.current,
-    //         })
-    //         .fromTo([afrolady.current],
-    //         { opacity:0},
-    //         {opacity:1,
-    //             duration:0.5,
-    //             // scrollTrigger:afrolady.current,
-    //         },"-=0.5")
-    //         .fromTo([header.current],
-    //         { opacity:0},
-    //         {opacity:1,
-    //             duration:0.5,
-    //             // scrollTrigger:header.current,
-    //         },"-=0.5")
-    //         .fromTo([southafrica.current],
-    //         { opacity:0},
-    //         {opacity:1,
-    //             delay:0.5,
-    //             duration:0.5,
-    //             // scrollTrigger:southafrica.current,
-    //         })
-    //         .fromTo([blueImage.current],
-    //         { opacity:0},
-    //         {opacity:1,
-    //             duration:0.5,
-    //             // scrollTrigger:blueImage.current,
-    //         }, "-=0.5");
-    //
-    //
-    //
-    //
-    //     const ST = ScrollTrigger.create({
-    //         trigger:[cont.current],
-    //         scrub:true,
-    //         toggleActions: "restart pause resume none",
-    //
-    //         onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-    //     });
-    //
-    //
-    //
-    //
-    //
-    //
-    //     let tlmobile =  gsap.timeline({defaults: {duration: 1}, paused: true});
-    //
-    //     tlmobile.fromTo([line1mobile.current],
-    //         {scale:0.2, autoAlpha:0},
-    //         {scale:1,autoAlpha:1,
-    //
-    //             duration:4.5,
-    //             ease:ExpoScaleEase.config(1, 0.5, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //         })
-    //         .fromTo([line2mobile.current],
-    //             {scale:0.2, autoAlpha:0},
-    //             {scale:1, autoAlpha:1,
-    //                 duration:3.5,
-    //
-    //
-    //                 ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 ")
-    //                 )
-    //
-    //
-    //             },"-=3.5")
-    //         .fromTo([line3mobile.current],
-    //             {scale:0.2, autoAlpha:0},
-    //             {scale:1, autoAlpha:1,
-    //
-    //                 duration:2.5,
-    //                 // scrollTrigger:line2.current,
-    //                 // scrollTrigger:{
-    //                 //     trigger:cont.current,
-    //                 //     scrub:true
-    //                 //
-    //                 // },
-    //                 ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //             }, "-=2.5")
-    //         .fromTo([line4mobile.current],
-    //             {scale:0.2},
-    //             {scale:1,
-    //                 duration:1,
-    //                 // scrollTrigger:line4.current,
-    //                 // scrollTrigger:{
-    //                 //     trigger:cont.current,
-    //                 //     scrub:1
-    //                 //
-    //                 // },
-    //                 ease:ExpoScaleEase.config(1, 0.2, CustomEase.create("custom", "M0,0 C0,0 0.06612,-0.00069 0.105,0.00463 0.13557,0.00882 0.15735,0.01361 0.185,0.02533 0.21427,0.03773 0.23495,0.05027 0.26,0.0703 0.28674,0.0917 0.30294,0.10989 0.325,0.13731 0.34837,0.16636 0.36089,0.1866 0.38,0.21949 0.40135,0.25624 0.41346,0.27844 0.43,0.31803 0.497,0.47845 0.52752,0.57771 0.595,0.73428 0.61144,0.77243 0.62657,0.79424 0.65,0.8285 0.67045,0.85841 0.68506,0.87712 0.71,0.90244 0.73103,0.9238 0.74749,0.93696 0.7725,0.95289 0.79397,0.96656 0.81073,0.97423 0.835,0.98203 0.86192,0.99069 0.88118,0.99395 0.91,0.99708 0.94392,1.00078 1,1 1,1 "))
-    //             })
-    //         .fromTo([sweaterMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //                 //
-    //                 // delay:9,
-    //
-    //
-    //
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1"),
-    //
-    //
-    //                 duration:0.8,
-    //                 // scrollTrigger:sweater.current,
-    //
-    //             })
-    //         .fromTo([afroguyMobile.current],
-    //             { opacity:0, autoAlpha:0},
-    //             {opacity:1,
-    //                 duration:0.5,
-    //                 autoAlpha:1,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:afroguy.current,
-    //             }, "-=0.5"
-    //         )
-    //         .fromTo([coverfaceMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //
-    //                 delay:0.5,
-    //                 duration:0.5,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:coverface.current,
-    //             })
-    //         .fromTo([afroladyMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //                 duration:0.5,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:afrolady.current,
-    //             },"-=0.5")
-    //         .fromTo([headerMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //                 duration:0.5,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:header.current,
-    //             },"-=0.5")
-    //         .fromTo([southafricaMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //                 delay:0.5,
-    //                 duration:0.5,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:southafrica.current,
-    //             })
-    //         .fromTo([blueImageMobile.current],
-    //             { opacity:0},
-    //             {opacity:1,
-    //                 duration:0.5,
-    //                 ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //                 // scrollTrigger:blueImage.current,
-    //             }, "-=0.5");
-    //
-    //
-    //     const STMobile = ScrollTrigger.create({
-    //         trigger:[cont.current],
-    //         scrub:true,
-    //         toggleActions: "restart pause resume none",
-    //
-    //         onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
-    //     });
-    //
-    // },[]);
 
 
 

@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-// import styles from '../../styles/Home.module.css'
-// import navstyles from './navbar.module.scss'
+
 import downloadappstyles from './downloadapp.module.scss'
 
 
@@ -64,20 +63,6 @@ autoAlpha:1,
 
 
 
-            //
-            // const ST = ScrollTrigger.create({
-            //     trigger:mainText.current,
-            //     scrub:true,
-            //     toggleActions: "play pause resume none",
-            //     onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-            // });
-            //
-
-
-
-
-
-
 
 
 
@@ -111,76 +96,6 @@ autoAlpha:1,
 
 
     }
-
-    // useEffect(() => {
-    //
-    //     const tl = gsap.timeline({defaults: {duration: 1}, paused: true})
-    //         .fromTo([phoneImage.current],{
-    //         y:550
-    //
-    //
-    //         }, {
-    //
-    //
-    //         y:0,
-    //
-    //             // autoAlpha:0,
-    //
-    //             duration:1,
-    //             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //
-    //
-    //         })
-    //
-    //
-    //
-    //
-    //
-    //     const ST = ScrollTrigger.create({
-    //         trigger:mainText.current,
-    //         scrub:true,
-    //         toggleActions: "play pause resume none",
-    //         onUpdate: ({progress}) => tl.progress() < progress ? tl.progress(progress) : null
-    //     });
-    //
-    //
-    //
-    //
-    //
-    //     const tlmobile = gsap.timeline({defaults: {duration: 1}, paused: true})
-    //         .fromTo([bigImageMobile.current],{
-    //             y:600
-    //
-    //
-    //         }, {
-    //
-    //
-    //             y:0,
-    //
-    //             // autoAlpha:0,
-    //
-    //             duration:1,
-    //             ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
-    //
-    //
-    //
-    //         })
-    //
-    //
-    //
-    //
-    //
-    //     const STmobile = ScrollTrigger.create({
-    //         trigger:containerMobile.current,
-    //         scrub:true,
-    //         toggleActions: "play pause resume none",
-    //         onUpdate: ({progress}) => tlmobile.progress() < progress ? tlmobile.progress(progress) : null
-    //     });
-    //
-    //
-    //
-    // },[]);
 
 
     return (

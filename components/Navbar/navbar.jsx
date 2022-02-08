@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
+
 import navstyles from './navbar.module.scss'
 import {useEffect, useRef, useState} from "react";
-// import { gsap } from 'gsap'
-// import NavBarModal from "./mobilemodal";
 
-// import Modal from "./modal";
 import navstylemobile from "./navbarmobile.module.scss";
 import LaptopMenu from "./LaptopMenu";
 import laptopmenustyles from "./laptopmenu.module.scss";
@@ -27,9 +24,7 @@ export default function NavBar( ) {
         const GSAP = require("gsap/dist/CSSRulePlugin");
         const { CSSRulePlugin } = GSAP;
         gsap.registerPlugin(CSSRulePlugin);
-        // do whatever you want to do with the plugin, its Working now...
-        // for example
-        //
+
         gsap.fromTo([nav.current],{
 
             autoAlpha:0,
@@ -53,7 +48,6 @@ export default function NavBar( ) {
 
     },[]);
 
-    // const [showModal, setShowModal] = useState(false);
     return (
 
 
