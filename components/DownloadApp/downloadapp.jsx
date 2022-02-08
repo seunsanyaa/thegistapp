@@ -25,7 +25,7 @@ export default function DownloadApp( ) {
     let containerMobile = useRef()
 
     const [ref, inView] = useInView({
-        threshold: 0.15,
+        threshold: 0.1,
         triggerOnce:true
     })
 
@@ -51,7 +51,7 @@ autoAlpha:1,
 
                 y:0,
 
-                    // autoAlpha:0,
+
 
                     duration:1.3,
                     ease: CustomEase.create("custom", "M0,0 C0.11,0.494 0.192,0.726 0.318,0.852 0.45,0.984 0.504,1 1,1")
@@ -99,19 +99,19 @@ autoAlpha:1,
 
 
     return (
-<div className={downloadappstyles.containerOutside} data-scroll-section>
+<div className={downloadappstyles.containerOutside} data-scroll-section inView={inView}>
 
 
+    <div ref={ref}></div>
 
 
-
-    <div className={downloadappstyles.container} ref={container}>
+    <div className={downloadappstyles.container} ref={container} >
 
 
 {/*<img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642896614/Mask_Group_1_uqoyvt.png"/>*/}
           <div className={downloadappstyles.textSide} ref={mainText}>
 
-              <h3 className={downloadappstyles.mainText}  inView={inView}>
+              <h3 className={downloadappstyles.mainText}  >
                   Download the app to get started
               </h3>
 
@@ -122,7 +122,7 @@ autoAlpha:1,
 
                   <img className={downloadappstyles.store} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1642878754/google_play_store_icon_1_yrpsbb.png"/>
 
-                  <div ref={ref}></div>
+
               </div>
 
 
